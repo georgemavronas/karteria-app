@@ -4,7 +4,7 @@ import "../styles/Navbar.css";
 function Navbar() {
   return (
     <header className="navbar">
-      <div className="navbar__logo">Karteria</div>
+      <div className="siteLogo"><img src="./logos/karteriaOldLogo.png"></img></div>
 
       <nav>
         <ul className="navbar__list">
@@ -19,6 +19,7 @@ function Navbar() {
           </li>
         </ul>
       </nav>
+
     </header>
   );
 }
