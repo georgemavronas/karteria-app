@@ -1,11 +1,9 @@
 import Cards from "../components/Cards";
-import Navbar from "../components/Navbar";
 import "../styles/Home.css";
 
 function Home() {
   return (
     <div>
-      <Navbar />
       
       <main className="home">
         <section className="homepage__slider">
