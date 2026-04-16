@@ -32,7 +32,7 @@ function Services() {
           <p>Description HEREEEE</p>
         </div>
 
-        <div className="service-card highlight">
+        <div className="service-card">
           <h3>Service 6</h3>
           <p>Description HEREEEE</p>
         </div>
