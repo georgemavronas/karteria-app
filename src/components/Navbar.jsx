@@ -10,12 +10,12 @@ function Navbar() {
   return (
     <>
       <header className="navbar">
-        <Link to="/" className="navbar__logo" onClick={closeMenu}>
+        <Link to="/" className="nav-logo" onClick={closeMenu}>
           <img src="/logos/karteriaOldLogo.png" alt="Karteria Logo" />
         </Link>
 
         <button
-          className={`hamburger ${open ? "hamburger--open" : ""}`}
+          className={`hamburger ${open ? "open" : ""}`}
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -25,11 +25,11 @@ function Navbar() {
         </button>
       </header>
 
-      <div className={`nav-overlay ${open ? "nav-overlay--visible" : ""}`}>
-        <button className="nav-overlay__close" onClick={closeMenu} aria-label="Close menu">
+      <div className={`nav-overlay ${open ? "visible" : ""}`}>
+        <button className="nav-close" onClick={closeMenu} aria-label="Close menu">
           &#x2715;
         </button>
-        <nav className="nav-overlay__menu">
+        <nav className="nav-menu">
           <ul>
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/services" onClick={closeMenu}>Services</Link></li>

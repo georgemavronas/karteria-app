@@ -1,3 +1,104 @@
-.about-page {
+.about {
+  background-color: #f0f2f5;
+}
+
+/* --- Εισαγωγή --- */
+.about-intro {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 80px 16px 48px;
+}
+
+.about-intro h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #007da5;
+  margin-bottom: 16px;
+}
+
+.about-intro p {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+/* --- Όραμα --- */
+.about-vision {
+  background-color: #ffffff;
+  border-top: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+  padding: 48px 16px;
+}
+
+.about-vision h2 {
+  max-width: 1280px;
+  margin: 0 auto 16px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+.about-vision p {
+  max-width: 1280px;
+  margin: 0 auto;
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+}
+
+/* --- Grid τομέων --- */
+.about-bottom {
+  padding: 48px 16px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  border-top: 1px solid #d1d5db;
+  border-left: 1px solid #d1d5db;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.about-card {
   padding: 40px;
+  border-right: 1px solid #d1d5db;
+  border-bottom: 1px solid #d1d5db;
+  background-color: transparent;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.about-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #007da5;
+  margin-bottom: 16px;
+}
+
+.about-card p {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 12px;
+}
+
+.about-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-intro h1 {
+    font-size: 1.5rem;
+  }
 }

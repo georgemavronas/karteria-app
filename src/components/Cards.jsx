@@ -23,11 +23,11 @@ const cards = [
 
 const Cards = () => {
   return (
-    <div className="cards-container">
+    <div className="cards">
       {cards.map((card, index) => (
         <Link to={card.path} className="card" key={index}>
           <img src={card.image} alt={card.title} />
-          <div className="each-card-content">
+          <div className="card-info">
             <h2>{card.title}</h2>
           </div>
         </Link>

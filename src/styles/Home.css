@@ -10,7 +10,7 @@
   font-weight: 400;
 }
 
-.landingPageVideo {
+.hero-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -21,7 +21,7 @@
   z-index: -1000;
 }
 
-.homepage__slider {
+.hero {
   position: relative;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@
   overflow: hidden;
 }
 
-.homepageMenu__slider {
+.home-cards {
   position: relative;
   display: flex;
   justify-content: center;
