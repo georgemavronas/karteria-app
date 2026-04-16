@@ -4,7 +4,6 @@ function Services() {
   return (
     <div>
       <main className="servicePage">
-        <h1>Services page</h1>
       </main>
     </div>
   );
