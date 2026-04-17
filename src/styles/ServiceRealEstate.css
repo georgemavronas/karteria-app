@@ -1,17 +1,14 @@
-﻿/* β”€β”€ Page wrapper β”€β”€ */
-.page {
+﻿.page {
     background-color: #f0f2f5;
     min-height: 100vh;
 }
 
-/* β”€β”€ Shared container β”€β”€ */
 .wrap {
     max-width: 900px;
     margin: 0 auto;
     padding: 0 24px;
 }
 
-/* β”€β”€ Hero β”€β”€ */
 .hero {
     background-color: #007da5;
     padding: 72px 24px 56px;
@@ -48,7 +45,6 @@
     margin: 0;
 }
 
-/* β”€β”€ Intro β”€β”€ */
 .intro {
     background-color: #ffffff;
     border-bottom: 1px solid #d1d5db;
@@ -67,7 +63,6 @@
     margin-bottom: 0;
 }
 
-/* β”€β”€ Section titles β”€β”€ */
 .heading {
     font-size: 1.5rem;
     font-weight: 700;
@@ -78,7 +73,6 @@
     display: inline-block;
 }
 
-/* β”€β”€ Highlight cards β”€β”€ */
 .highlights {
     padding: 56px 24px;
 }
@@ -128,10 +122,10 @@
     margin: 0;
 }
 
-/* β”€β”€ Services section β”€β”€ */
 .services {
     background-color: #f0f2f5;
     padding: 56px 24px;
+    padding-top: 30%;
 }
 
 .sale {

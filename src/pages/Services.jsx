@@ -4,7 +4,18 @@ import '../styles/Services.css';
 
 function Services() {
   return (
-    <section className="services">
+    <section className="services-page">
+
+      <div className="services-intro">
+        <div className="services-intro-inner">
+          <p className="services-label">ΚΑΡΤΕΡΙΑ</p>
+          <h1 className="services-title">Υπηρεσίες</h1>
+          <p className="services-desc">
+            Ολοκληρωμένες τεχνικές και συμβουλευτικές υπηρεσίες σε κάθε στάδιο ενός έργου —
+            από τη μελέτη και την αδειοδότηση έως την κατασκευή και την παράδοση.
+          </p>
+        </div>
+      </div>
 
       <div className="service-grid">
 

@@ -1,7 +1,58 @@
-.services {
+.services-page {
   background-color: #f0f2f5;
-  padding: 48px 16px;
-  padding-top: 10%;
+  padding-top: 72px;
+  padding-bottom: 48px;
+}
+
+.services-intro {
+  background-color: #007da5;
+  padding: 48px 24px 64px;
+  margin-bottom: 48px;
+}
+
+.services-intro-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 0;
+}
+
+.services-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 10px;
+}
+
+.services-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 16px;
+  line-height: 1.1;
+}
+
+.services-title::after {
+  display: block;
+  width: 56px;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin-top: 16px;
+}
+
+.services-desc {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.8;
+  max-width: 620px;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .services-intro { padding: 80px 16px 40px; }
+  .services-title { font-size: 2rem; }
+  .services-desc { font-size: 0.9rem; }
 }
 
 .service-grid {
@@ -10,7 +61,8 @@
   border-top: 1px solid #d1d5db;
   border-left: 1px solid #d1d5db;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 48px;
+  padding: 0 16px;
 }
 
 .service-card {
