@@ -28,6 +28,12 @@
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
+.service-card--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
 
 
 .service-card h3 {
@@ -45,6 +51,48 @@
   font-size: 0.875rem;
   color: #4b5563;
   line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.service-subtitle {
+  font-size: 0.9rem !important;
+  font-weight: 600;
+  color: #007da5 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 16px !important;
+}
+
+.service-list {
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.service-list li {
+  font-size: 0.875rem;
+  color: #4b5563;
+  line-height: 1.6;
+  padding-left: 16px;
+  border-left: 3px solid #007da5;
+}
+
+.service-list-title {
+  display: block;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2px;
+}
+
+.service-cta {
+  font-size: 0.875rem !important;
+  font-style: italic;
+  color: #007da5 !important;
+  font-weight: 600;
+  margin-top: 16px !important;
 }
 
 @media (max-width: 1024px) {

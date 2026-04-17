@@ -1,0 +1,220 @@
+﻿/* ── Page wrapper ── */
+.pm-page {
+    background-color: #f0f2f5;
+    min-height: 100vh;
+}
+
+/* ── Shared container ── */
+.pm-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* ── Hero ── */
+.pm-hero {
+    background-color: #007da5;
+    padding: 72px 24px 56px;
+}
+
+.pm-hero-inner {
+    padding-top: 50px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.pm-hero-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 12px;
+}
+
+.pm-hero-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    line-height: 1.2;
+}
+
+.pm-hero-subtitle {
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, 0.75);
+    font-style: italic;
+    margin: 0;
+}
+
+/* ── Intro ── */
+.pm-intro {
+    background-color: #ffffff;
+    padding: 56px 24px;
+}
+
+.pm-intro p {
+    font-size: 1.05rem;
+    color: #374151;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto 20px;
+}
+
+.pm-intro p:last-child {
+    margin-bottom: 0;
+}
+
+/* ── Services section (light grey) ── */
+.pm-services-section {
+    background-color: #f0f2f5;
+    padding: 56px 24px;
+}
+
+/* ── Cost section (white) ── */
+.pm-cost-section {
+    background-color: #ffffff;
+    padding: 56px 24px;
+}
+
+/* ── Section title ── */
+.pm-section-title {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #007da5;
+    margin-bottom: 20px;
+}
+
+/* ── Section lead ── */
+.pm-section-lead {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+/* ── List ── */
+.pm-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.pm-list li {
+    padding: 12px 16px 12px 20px;
+    border-left: 3px solid #007da5;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    border-radius: 0 6px 6px 0;
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.6;
+}
+
+.pm-cost-section .pm-list li {
+    background-color: #f0f2f5;
+}
+
+/* ── Note box ── */
+.pm-note {
+    background-color: #e8f4f8;
+    border-left: 4px solid #007da5;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.7;
+    margin-top: 24px;
+}
+
+/* ── ISO grid ── */
+.pm-iso-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.pm-iso-card {
+    background-color: #007da5;
+    border-radius: 10px;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.pm-iso-code {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 6px;
+}
+
+.pm-iso-label {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* ── Legal section ── */
+.pm-legal-section {
+    background-color: #1a2e3b;
+    padding: 56px 24px;
+}
+
+.pm-legal-section .pm-section-title {
+    color: #ffffff;
+}
+
+.pm-legal-section > .pm-container > p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.pm-list--legal li {
+    background-color: rgba(255, 255, 255, 0.07);
+    border-left-color: #4db8d4;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.pm-list--legal li strong {
+    color: #ffffff;
+}
+
+.pm-legal-note {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-left: 4px solid #4db8d4;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 1.7;
+    margin-top: 24px;
+}
+
+/* ── Approach section ── */
+.pm-approach-section {
+    background-color: #ffffff;
+    padding: 56px 24px;
+    text-align: center;
+}
+
+.pm-approach-section p {
+    font-size: 1rem;
+    color: #374151;
+    line-height: 1.8;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .pm-hero-title {
+        font-size: 1.8rem;
+    }
+
+    .pm-iso-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

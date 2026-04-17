@@ -15,7 +15,7 @@ function Home() {
             preload="auto"
             className="hero-video"
           >
-            <source src="./content/landingPagePortait.mp4" type="video/mp4" />
+            <source src="/content/landingPagePortait.mp4" type="video/mp4" />
           </video>  
         
         
