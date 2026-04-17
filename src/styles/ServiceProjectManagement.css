@@ -210,11 +210,14 @@
 
 /* ── Responsive ── */
 @media (max-width: 768px) {
-    .pm-hero-title {
-        font-size: 1.8rem;
-    }
-
-    .pm-iso-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    .pm-hero { padding: 48px 16px 36px; }
+    .pm-hero-inner { padding-top: 30px; }
+    .pm-hero-title { font-size: 1.8rem; }
+    .pm-section-title { font-size: 1.3rem; }
+    .pm-intro { padding: 32px 16px; }
+    .pm-services-section { padding: 32px 16px; }
+    .pm-cost-section { padding: 32px 16px; }
+    .pm-legal-section { padding: 32px 16px; }
+    .pm-approach-section { padding: 32px 16px 48px; }
+    .pm-iso-grid { grid-template-columns: repeat(2, 1fr); }
 }

@@ -89,15 +89,11 @@ a.value:hover {
 
 /* --- Responsive --- */
 @media (max-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-intro h1 {
-    font-size: 1.5rem;
-  }
-
-  .map iframe {
-    height: 300px;
-  }
+  .contact-intro { padding: 56px 16px 32px; }
+  .contact-intro h1 { font-size: 1.5rem; }
+  .contact-cards { padding: 0 16px 48px; }
+  .info-card { padding: 28px 16px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .map { padding: 0 16px 48px; }
+  .map iframe { height: 300px; }
 }
