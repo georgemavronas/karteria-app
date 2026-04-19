@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Poppins:wght@300;400;600;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: 'Poppins','Roboto' ,'Ubuntu', 'Oxygen','Segoe UI',
+   'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,61 +17,69 @@ code {
 
 :root {
   /* ===== COLORS ===== */
-  --color-primary: #4f46e5;
-  --color-primary-hover: #4338ca;
-  --color-secondary: #06b6d4;
-  --color-background: #ffffff;
-  --color-surface: #f9fafb;
-  --color-text: #111827;
-  --color-text-light: #6b7280;
-  --color-border: #e5e7eb;
-  --color-error: #ef4444;
-  --color-success: #22c55e;
-  --color-warning: #f59e0b;
+  /* Primary  */
+  --color-primary: var(--color-primary-900);  
+  --color-primary-50: #eff6ff;  
+  --color-primary-100: #dbeafe;      
+  --color-primary-200: #bfdbfe;   
+  --color-primary-300: #93c5fd;   
+  --color-primary-400: #60a5fa;   
+  --color-primary-500: #3b82f6;   
+  --color-primary-600: #2563eb;   
+  --color-primary-700: #1d4ed8;   
+  --color-primary-800: #1e40af;   
+  --color-primary-900: #1e3a8a;   
+  --color-primary-950: #172554;     
+  /* Secondary  */
+  --color-secondary: var(--color-secondary-700); 
+  --color-secondary-50: #eafdff;  
+  --color-secondary-100: #caf9ff;      
+  --color-secondary-200: #9cf2ff;   
+  --color-secondary-300: #57e7ff;   
+  --color-secondary-400: #0cd8ff;   
+  --color-secondary-500: #00c2ea;   
+  --color-secondary-600: #0099c4;   
+  --color-secondary-700: #007da5;   
+  --color-secondary-800: #0b607f;   
+  --color-secondary-900: #0e4f6b;   
+  --color-secondary-950: #02344a;    
+  /* Tertiary  */
+  --color-tertiary: var(--color-tertiary-700); 
+  --color-tertiary-50: #f4f7fb;  
+  --color-tertiary-100: #e9eef5;      
+  --color-tertiary-200: #cedae9;   
+  --color-tertiary-300: #a3bad6;   
+  --color-tertiary-400: #7196bf;   
+  --color-tertiary-500: #4f79a8;   
+  --color-tertiary-600: #3d608c;   
+  --color-tertiary-700: #324d72;   
+  --color-tertiary-800: #2c4260;   
+  --color-tertiary-900: #293951;   
+  --color-tertiary-950: #1e293b;    
+  /* Accent  */
+  --color-accent: var(--color-accent-500); 
+  --color-accent-50: #fff7ed;  
+  --color-accent-100: #ffedd5;      
+  --color-accent-200: #fed7aa;   
+  --color-accent-300: #fdba74;   
+  --color-accent-400: #fb923c;   
+  --color-accent-500: #f97316;   
+  --color-accent-600: #ea580c;   
+  --color-accent-700: #c2410c;   
+  --color-accent-800: #9a3412;   
+  --color-accent-900: #7c2d12;   
+  --color-accent-950: #431407;    
 
-  /* ===== TYPOGRAPHY ===== */
-  --font-family-base: 'Inter', sans-serif;
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-base: 16px;
-  --font-size-lg: 18px;
-  --font-size-xl: 24px;
-  --font-size-2xl: 32px;
+  --color-bg: #F8FAFC;             /* Page background */
+  --color-surface: #FFFFFF;        /* Cards, sections */
 
-  --font-weight-normal: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
+  --color-text: #0B0F19;           /* Main text */
+  --color-text-muted: #64748B;     /* Secondary text */
 
-  /* ===== SPACING ===== */
-  --space-xs: 4px;
-  --space-sm: 8px;
-  --space-md: 16px;
-  --space-lg: 24px;
-  --space-xl: 32px;
-
-  /* ===== BORDERS ===== */
-  --border-width: 1px;
-  --border-style: solid;
-  --border-color: var(--color-border);
-
-  --border-radius-sm: 4px;
-  --border-radius-md: 8px;
-  --border-radius-lg: 16px;
-  --border-radius-xl: 24px;
-  --border-radius-full: 9999px;
 
   /* ===== SHADOWS ===== */
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
 
-  /* ===== TRANSITIONS ===== */
-  --transition-fast: 0.15s ease-in-out;
-  --transition-normal: 0.3s ease-in-out;
-  --transition-slow: 0.5s ease-in-out;
-
-  /* ===== Z-INDEX ===== */
-  --z-dropdown: 1000;
-  --z-modal: 2000;
-  --z-tooltip: 3000;
 }

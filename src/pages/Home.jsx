@@ -1,7 +1,23 @@
-import Cards from "../components/Cards";
+import Card from "../components/Card";
 import "../styles/Home.css";
+import { useEffect, useState } from "react";
 
 function Home() {
+  const [isPortrait, setIsPortrait] = useState(false);
+
+  useEffect(() => {
+    const mediaQuery = window.matchMedia("(orientation: portrait)");
+
+    const handleChange = (e) => {
+      setIsPortrait(e.matches);
+    };
+
+    setIsPortrait(mediaQuery.matches);
+    mediaQuery.addEventListener("change", handleChange);
+
+  return () => mediaQuery.removeEventListener("change", handleChange);
+  }, []);
+
   return (
     <div>
       
@@ -12,10 +28,17 @@ function Home() {
             autoPlay
             loop
             playsInline
-            preload="auto"
+            preload="metadata"
             className="hero-video"
           >
-            <source src="/content/landingPagePortait.mp4" type="video/mp4" />
+            <source
+              src={
+                isPortrait
+                  ? "/content/landingPagePortrait.mp4"
+                  : "/content/landingPageLandscape.mp4"
+              }
+              type="video/mp4"
+            />
           </video>  
         
         
@@ -29,8 +52,13 @@ function Home() {
           </a>
 
         </section>
-        <section className="home-cards">
-          <Cards />
+        <section className="home-section-cards">
+          <div class="home_grid__wrapper">
+            <Card image="/pictures/services_thubnail.jpg" title="SERVICES" path="/services"/>        
+            <Card image="/pictures/aboutUs_thubnail.jpg" title="ABOUT US" path="/services"/>    
+            <Card image="/pictures/contact_thubnail.jpg" title="CONTACT" path="/services"/>               
+          </div>
+          
         </section>
         
         

@@ -9,9 +9,6 @@
   align-items: center;
   padding: 0 32px;
   z-index: 900;
-  background: rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
   box-sizing: border-box;
 }
 
@@ -48,7 +45,7 @@
 
 .hamburger span {
   display: block;
-  height: 2px;
+  height: 3px;
   width: 100%;
   background: #fff;
   border-radius: 2px;
@@ -95,6 +92,7 @@
   border: none;
   color: #fff;
   font-size: 2rem;
+  font-weight: 600;
   cursor: pointer;
   line-height: 1;
   padding: 4px 8px;
@@ -102,7 +100,7 @@
 }
 
 .nav-close:hover {
-  color: #c8a96e;
+  color: var(--color-accent);
   transform: rotate(90deg) scale(1.1);
 }
 
@@ -126,6 +124,5 @@
 }
 
 .nav-menu a:hover {
-  color: #c8a96e;
-  letter-spacing: 0.1em;
+  color: var(--color-accent);
 }
