@@ -30,7 +30,6 @@ function Footer() {
           <div className="copyright">
             <span>© 2026 KARTERIA All Rights Reserved</span>
             <div className="credits">
-              <a href="/privacy">Privacy / Legal Notice</a>
               <span>Created by <strong>Karteria Team</strong></span>
             </div>
           </div>
