@@ -5,7 +5,6 @@ function ServiceSustainability() {
   return (
     <div className="page">
 
-      {/* Hero */}
       <section className="hero">
         <div className="hero-inner">
           <p className="tag">Υπηρεσίες</p>
@@ -14,7 +13,6 @@ function ServiceSustainability() {
         </div>
       </section>
 
-      {/* Intro */}
       <section className="intro">
         <div className="wrap">
           <p>

@@ -77,6 +77,29 @@
     padding: 56px 24px;
 }
 
+.pm-cost-section p {
+    font-size: 0.97rem;
+    color: #374151;
+    line-height: 1.85;
+    margin-bottom: 20px;
+    max-width: 900px;
+}
+
+.pm-cost-section p:first-of-type {
+    font-size: 1rem;
+    color: #1f2937;
+    font-weight: 500;
+    padding: 16px 20px;
+    background-color: #f0f9ff;
+    border-left: 4px solid #007da5;
+    border-radius: 0 8px 8px 0;
+    margin-bottom: 28px;
+}
+
+.pm-cost-section p:last-of-type {
+    margin-bottom: 0;
+}
+
 /* ── Section title ── */
 .pm-section-title {
     font-size: 1.6rem;
@@ -130,29 +153,58 @@
 /* ── ISO grid ── */
 .pm-iso-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 16px;
-    margin-top: 32px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 36px;
+    padding-top: 28px;
+    border-top: 1px solid #e5e7eb;
 }
 
 .pm-iso-card {
-    background-color: #007da5;
-    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-top: 3px solid #007da5;
+    border-radius: 8px;
     padding: 20px 12px;
     text-align: center;
+}
+
+.pm-iso-card::before {
+    display: none;
+}
+
+.pm-iso-card:hover {
+    transform: none;
+    box-shadow: none;
 }
 
 .pm-iso-code {
     font-size: 1rem;
     font-weight: 700;
-    color: #ffffff;
+    color: #007da5;
+    letter-spacing: 0.03em;
     margin: 0 0 6px;
+    line-height: 1.2;
 }
 
 .pm-iso-label {
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.78rem;
+    color: #64748b;
     margin: 0;
+    line-height: 1.4;
+}
+
+
+.pm-iso-card--leed .pm-iso-code {
+    color: #2d7a4f;
+}
+
+.pm-iso-card--leed::before {
+    display: none;
+}
+
+.pm-iso-card--leed:hover {
+    box-shadow: none;
 }
 
 /* ── Legal section ── */
@@ -219,5 +271,6 @@
     .pm-cost-section { padding: 32px 16px; }
     .pm-legal-section { padding: 32px 16px; }
     .pm-approach-section { padding: 32px 16px 48px; }
-    .pm-iso-grid { grid-template-columns: repeat(2, 1fr); }
+    .pm-iso-grid { grid-template-columns: repeat(3, 1fr); }
+    .pm-cost-section p:first-of-type { font-size: 0.95rem; }
 }
