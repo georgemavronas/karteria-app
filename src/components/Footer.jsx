@@ -20,7 +20,7 @@ function Footer() {
         <div className="footer-bottom">
 
           <nav className="footer-nav">
-            <a href="/about">About</a>
+            <a href="/about">About Us</a>
             <a href="/services">Services</a>
             <a href="/contact">Contact</a>
           </nav>
