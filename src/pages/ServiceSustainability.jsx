@@ -86,7 +86,8 @@ function ServiceSustainability() {
             </p>
             <p>
               Τα έργα αξιολογούνται με βάση συγκεκριμένα κριτήρια βιωσιμότητας και
-              κατατάσσονται σε επίπεδα πιστοποίησης, ανάλογα με την επίδοσή τους.
+              κατατάσσονται σε επίπεδα πιστοποίησης, όπως Certified, Silver, Gold και
+              Platinum, ανάλογα με την επίδοσή τους.
             </p>
             <div className="levels">
               <div className="level certified">Certified</div>
