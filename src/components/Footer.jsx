@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLinkedinIn, FaFacebookF, FaInstagram } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 function Footer() {
@@ -9,13 +9,11 @@ function Footer() {
 
         <div className="footer-top">
           <div>
-            <img src="/logos/karteriaOldLogo.png" alt="Karteria Logo" className="footer-logo" />
+            <img src="/logos/karteria_logo_white.svg" alt="Karteria Logo" className="footer-logo" />
           </div>
 
           <div className="social">
             <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
-            <a href="#" aria-label="Facebook"><FaFacebookF /></a>
-            <a href="#" aria-label="Instagram"><FaInstagram /></a>
           </div>
         </div>
 

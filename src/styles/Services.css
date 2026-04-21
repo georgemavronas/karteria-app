@@ -1,11 +1,11 @@
 .services-page {
   background-color: var(--color-bg);
-  padding-top: 72px;
-  padding-bottom: 48px;
+  margin-top: var(--header-height);
+  min-height: var(--body-noscroll-heigth);
 }
 
 .services-intro {
-  background-color: var(--color-secondary);
+  background-color: var(--color-secondary-950);
   padding: 48px 24px 64px;
   margin-bottom: 48px;
 }

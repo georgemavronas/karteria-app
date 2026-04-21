@@ -18,18 +18,18 @@ code {
 :root {
   /* ===== COLORS ===== */
   /* Primary  */
-  --color-primary: var(--color-primary-900);  
-  --color-primary-50: #eff6ff;  
-  --color-primary-100: #dbeafe;      
-  --color-primary-200: #bfdbfe;   
-  --color-primary-300: #93c5fd;   
-  --color-primary-400: #60a5fa;   
-  --color-primary-500: #3b82f6;   
-  --color-primary-600: #2563eb;   
-  --color-primary-700: #1d4ed8;   
-  --color-primary-800: #1e40af;   
-  --color-primary-900: #1e3a8a;   
-  --color-primary-950: #172554;     
+  --color-primary: var(--color-primary-700);  
+  --color-primary-50: #f4f7fb;  
+  --color-primary-100: #e9eef5;      
+  --color-primary-200: #cedae9;   
+  --color-primary-300: #a3bad6;   
+  --color-primary-400: #7196bf;   
+  --color-primary-500: #4f79a8;   
+  --color-primary-600: #3d608c;   
+  --color-primary-700: #324d72;   
+  --color-primary-800: #2c4260;   
+  --color-primary-900: #293951;   
+  --color-primary-950: #1e293b; 
   /* Secondary  */
   --color-secondary: var(--color-secondary-700); 
   --color-secondary-50: #eafdff;  
@@ -42,20 +42,25 @@ code {
   --color-secondary-700: #007da5;   
   --color-secondary-800: #0b607f;   
   --color-secondary-900: #0e4f6b;   
-  --color-secondary-950: #02344a;    
+  --color-secondary-950: #02344a;
+  --color-secondary-960: #012b3d;
+  --color-secondary-970: #001e2a;  
+  --color-secondary-980: #00161f;
+  --color-secondary-990: #00131a;               
   /* Tertiary  */
-  --color-tertiary: var(--color-tertiary-700); 
-  --color-tertiary-50: #f4f7fb;  
-  --color-tertiary-100: #e9eef5;      
-  --color-tertiary-200: #cedae9;   
-  --color-tertiary-300: #a3bad6;   
-  --color-tertiary-400: #7196bf;   
-  --color-tertiary-500: #4f79a8;   
-  --color-tertiary-600: #3d608c;   
-  --color-tertiary-700: #324d72;   
-  --color-tertiary-800: #2c4260;   
-  --color-tertiary-900: #293951;   
-  --color-tertiary-950: #1e293b;    
+  --color-tertiary: var(--color-tertiary-600); 
+  --color-tertiary-50: #eff6ff;  
+  --color-tertiary-100: #dbeafe;      
+  --color-tertiary-200: #bfdbfe;   
+  --color-tertiary-300: #93c5fd;   
+  --color-tertiary-400: #60a5fa;   
+  --color-tertiary-500: #3b82f6;   
+  --color-tertiary-600: #2563eb;   
+  --color-tertiary-700: #1d4ed8;   
+  --color-tertiary-800: #1e40af;   
+  --color-tertiary-900: #1e3a8a;   
+  --color-tertiary-950: #172554;  
+   
   /* Accent  */
   --color-accent: var(--color-accent-500); 
   --color-accent-50: #fff7ed;  
@@ -70,7 +75,9 @@ code {
   --color-accent-900: #7c2d12;   
   --color-accent-950: #431407;    
 
-  --color-bg: #F8FAFC;             /* Page background */
+  --color-choco: #d2691e;   
+
+  --color-bg: #FFFAFA;             /* Page background */
   --color-surface: #FFFFFF;        /* Cards, sections */
 
   --color-text: #0B0F19;           /* Main text */
@@ -82,4 +89,8 @@ code {
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
 
+  /* ===== SIZES ===== */
+  --header-height: 72px;
+  --footer-height: 180px;
+  --body-noscroll-heigth: calc(100vh - (var(--header-height)));
 }

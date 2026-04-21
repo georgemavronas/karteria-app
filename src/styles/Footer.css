@@ -1,13 +1,7 @@
 .footer {
   background-color: var(--color-secondary);
   color: #fff;
-  padding: 32px 16px;
-}
-
-@media (min-width: 768px) {
-  .footer {
-    padding: 32px 48px;
-  }
+  padding: 32px 64px;
 }
 
 .footer-inner {
@@ -19,21 +13,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-bottom: 32px;
-  gap: 24px;
-}
-
-@media (min-width: 768px) {
-  .footer-top {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0;
-  }
+  margin-bottom: 12px;
+  gap: 12px;
 }
 
 .footer-logo {
-  height: 52px;
+  height: 28px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -62,13 +47,6 @@
   gap: 24px;
 }
 
-@media (min-width: 768px) {
-  .footer-bottom {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
-}
 
 .footer-nav {
   display: flex;
@@ -82,10 +60,27 @@
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 700;
+  cursor: pointer;
+  display: block;
+  overflow: hidden;
+  position: relative;
+
 }
 
-.footer-nav a:hover {
-  text-decoration: underline;
+.footer-nav a:after {
+    background-color: #fff;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    transform: translateX(-101%);
+    transition: all .3s ease-in-out;
+    width: 100%;
+}
+
+.footer-nav a:hover::after {
+  transform: translateX(0);
 }
 
 .copyright {
@@ -95,13 +90,6 @@
   gap: 8px;
   font-size: 11px;
   opacity: 0.9;
-}
-
-@media (min-width: 768px) {
-  .copyright {
-    flex-direction: row;
-    align-items: center;
-  }
 }
 
 .credits {
@@ -117,4 +105,25 @@
 
 .credits a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    padding: 32px 64px;
+  }
+  .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0;
+  }
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .copyright {
+    flex-direction: row;
+    align-items: center;
+  }
 }

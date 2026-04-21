@@ -3,22 +3,26 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 72px;
+  height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 32px;
   z-index: 900;
   box-sizing: border-box;
+  background-color: transparent;
+  transition: 0.5;
+  background-color: var(--color-secondary);
 }
 
 .nav-logo {
   display: flex;
   align-items: center;
+  margin-left: -16px;
 }
 
 .nav-logo img {
-  height: 52px;
+  height: 46px;
   width: auto;
   object-fit: contain;
   filter: drop-shadow(0 2px 6px rgba(0,0,0,0.35));
@@ -86,7 +90,7 @@
 
 .nav-close {
   position: absolute;
-  top: 28px;
+  top: 18px;
   right: 32px;
   background: none;
   border: none;
@@ -124,5 +128,5 @@
 }
 
 .nav-menu a:hover {
-  color: var(--color-accent);
+  color: var(--color-choco);
 }

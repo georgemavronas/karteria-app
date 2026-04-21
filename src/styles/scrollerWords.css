@@ -1,0 +1,89 @@
+.scrollingCard {
+  /* color used to softly clip top and bottom of the .words container */
+  --bg-color: transparent;
+  background-color: var(--bg-color);
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 1.25rem;
+}
+.scrollingLoader {
+  color: rgb(255, 255, 255);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 9rem;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 16dvh;
+  padding: 10px 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 8px;
+}
+
+.scrollingWords {
+  overflow: hidden;
+  position: relative;
+}
+.scrollingWords::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    var(--bg-color) 10%,
+    transparent 30%,
+    transparent 70%,
+    var(--bg-color) 90%
+  );
+  z-index: 20;
+}
+
+.scrollingWord {
+  display: block;
+  height: 100%;
+  padding-left: 6px;
+  color: white;
+  animation: spin_4991 15s infinite;
+}
+
+@keyframes spin_4991 {
+  /* 1η λέξη */
+  0%, 16% {
+    transform: translateY(0%);
+  }
+  20% {
+    transform: translateY(-100%);
+  }
+
+  /* 2η λέξη */
+  20%, 36% {
+    transform: translateY(-100%);
+  }
+  40% {
+    transform: translateY(-200%);
+  }
+
+  /* 3η λέξη */
+  40%, 56% {
+    transform: translateY(-200%);
+  }
+  60% {
+    transform: translateY(-300%);
+  }
+
+  /* 4η λέξη */
+  60%, 76% {
+    transform: translateY(-300%);
+  }
+  80% {
+    transform: translateY(-400%);
+  }
+
+  /* 5η λέξη */
+  80%, 96% {
+    transform: translateY(-400%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}

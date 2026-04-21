@@ -1,17 +1,27 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
-
   const closeMenu = () => setOpen(false);
+  const [coloredBg, setColoredBg] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setColoredBg(window.pageYOffset > 100)
+      );
+    }
+  }, []);
 
   return (
     <>
-      <header className="navbar">
+      <header className={`navbar ${
+          coloredBg ? "coloredNavbar" : ""
+        }`}>
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logos/karteriaOldLogo.png" alt="Karteria Logo" />
+          <img src="/logos/karteria_logo_white.svg" alt="Karteria Logo" />
         </Link>
 
         <button
@@ -32,8 +42,8 @@ function Navbar() {
         <nav className="nav-menu">
           <ul>
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
-            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
             <li><Link to="/about" onClick={closeMenu}>About</Link></li>
+            <li><Link to="/services" onClick={closeMenu}>Services</Link></li>
             <li><Link to="/contact" onClick={closeMenu}>Contact</Link></li>
           </ul>
         </nav>
