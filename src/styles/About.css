@@ -23,6 +23,16 @@
   max-width: 760px;
 }
 
+.about-intro-body {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 760px;
+  border-top: 1px solid #d1d5db;
+  padding-top: 32px;
+}
+
 /* --- Όραμα --- */
 .about-vision {
   background-color: #ffffff;
