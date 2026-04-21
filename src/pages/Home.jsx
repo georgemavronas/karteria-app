@@ -24,6 +24,7 @@ function Home() {
       <main className="home">
         <section className="hero">
           <video
+            key={isPortrait ? "portrait" : "landscape"}
             muted
             autoPlay
             loop
@@ -55,8 +56,8 @@ function Home() {
         <section className="home-section-cards">
           <div class="home_grid__wrapper">
             <Card image="/pictures/services_thubnail.jpg" title="SERVICES" path="/services"/>        
-            <Card image="/pictures/aboutUs_thubnail.jpg" title="ABOUT US" path="/services"/>    
-            <Card image="/pictures/contact_thubnail.jpg" title="CONTACT" path="/services"/>               
+            <Card image="/pictures/aboutUs_thubnail.jpg" title="ABOUT US" path="/about"/>    
+            <Card image="/pictures/contact_thubnail.jpg" title="CONTACT" path="/contact"/>               
           </div>
           
         </section>
