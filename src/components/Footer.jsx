@@ -13,7 +13,7 @@ function Footer() {
           </div>
 
           <div className="social">
-            <a href="#" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/company/karteriaee/" target="_blank" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
         </div>
 

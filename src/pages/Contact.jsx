@@ -1,6 +1,37 @@
+import { useState } from "react";
 import "../styles/Contact.css";
 
 function Contact() {
+  const [status, setStatus] = useState("idle"); // idle | sending | success | error
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("sending");
+
+    const formData = new FormData(e.target);
+    const data = Object.fromEntries(formData);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json();
+      if (json.success) {
+        setStatus("success");
+        e.target.reset();
+        setTimeout(() => setStatus("idle"), 4000); // 4 deuterolepta dld
+      } else {
+        setStatus("error");
+        setTimeout(() => setStatus("idle"), 4000);
+      }
+    } catch {
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 4000);
+    }
+  };
+
   return (
     <main className="contact">
 
@@ -11,28 +42,111 @@ function Contact() {
 
       <section className="contact-cards">
         <div className="contact-grid">
-
           <div className="info-card">
             <span className="label">Email</span>
-            <a href="mailto:info@karteriaee.gr" className="value">
-              info@karteriaee.gr
-            </a>
+            <a href="mailto:info@karteriaee.gr" className="value">info@karteriaee.gr</a>
           </div>
-
           <div className="info-card">
             <span className="label">Τηλ. Επικοινωνίας</span>
-            <a href="tel:+302114119730" className="value">
-              +30 2114119730
-            </a>
+            <a href="tel:+302114119730" className="value">+30 2114119730</a>
           </div>
-
           <div className="info-card">
             <span className="label">Διεύθυνση</span>
-            <span className="value">
-              ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 70, ΔΑΦΝΗ, Τ.Κ. 17237
-            </span>
+            <span className="value">ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 70, ΔΑΦΝΗ, Τ.Κ. 17237</span>
+          </div>
+        </div>
+      </section>
+
+      <section className="contact-form-section">
+        <div className="contact-form-wrapper">
+
+          <div className="contact-form-left">
+            <p className="contact-form-label">ΓΡΑΨΤΕ ΜΑΣ</p>
+            <h2 className="contact-form-title">Πώς μπορούμε<br />να σας βοηθήσουμε;</h2>
+            <p className="contact-form-sub">
+              Συμπληρώστε τη φόρμα και θα επικοινωνήσουμε μαζί σας το συντομότερο δυνατό.
+            </p>
           </div>
 
+          <form className="contact-form" onSubmit={handleSubmit} noValidate>
+
+            {/* Web3Forms Access Key — εδώ πρέπει να αντικαταστήσω το δικο μου από web3forms.com */}
+            <input type="hidden" name="access_key" value="286d1c0e-f156-4a74-940e-9f620c9ad8f6" />
+
+            <div className="form-row">
+              <div className="form-group">
+                <label htmlFor="user_name">ΟΝΟΜΑΤΕΠΩΝΥΜΟ</label>
+                <input
+                  id="user_name"
+                  type="text"
+                  name="user_name"
+                  placeholder="Γιώργος Παπαδόπουλος"
+                  required
+                />
+              </div>
+              <div className="form-group">
+                <label htmlFor="user_email">EMAIL</label>
+                <input
+                  id="user_email"
+                  type="email"
+                  name="user_email"
+                  placeholder="email@example.com"
+                  required
+                />
+              </div>
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="user_phone">ΤΗΛΕΦΩΝΟ <span className="optional">(προαιρετικό)</span></label>
+              <input
+                id="user_phone"
+                type="tel"
+                name="user_phone"
+                placeholder="+30 69xxxxxxxx"
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="subject">ΘΕΜΑ</label>
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Πληροφορίες για υπηρεσία..."
+                required
+              />
+            </div>
+
+            <div className="form-group">
+              <label htmlFor="message">ΜΗΝΥΜΑ</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Γράψτε το μήνυμά σας εδώ..."
+                required
+              />
+            </div>
+
+            <button
+              type="submit"
+              className={`form-submit ${status === "sending" ? "sending" : ""}`}
+              disabled={status === "sending" || status === "success"}
+            >
+              {status === "sending" && "Αποστολή..."}
+              {status === "success" && "✓ Στάλθηκε!"}
+              {status === "error" && "Προσπαθήστε ξανά"}
+              {status === "idle" && "Αποστολή Μηνύματος"}
+            </button>
+
+            {status === "success" && (
+              <p className="form-feedback success">Το μήνυμά σας εστάλη με επιτυχία. Θα επικοινωνήσουμε σύντομα!</p>
+            )}
+            {status === "error" && (
+              <p className="form-feedback error">Κάτι πήγε στραβά. Παρακαλώ δοκιμάστε ξανά ή επικοινωνήστε τηλεφωνικά.</p>
+            )}
+
+          </form>
         </div>
       </section>
 
