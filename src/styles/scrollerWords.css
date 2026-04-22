@@ -10,10 +10,11 @@
   color: rgb(255, 255, 255);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 9rem;
+  font-size: clamp(3rem, 10vw, 12rem);
+  line-height: 1.2;
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
-  height: 16dvh;
+  height: 1.2em;
   padding: 10px 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -44,6 +45,13 @@
   padding-left: 6px;
   color: white;
   animation: spin_4991 15s infinite;
+}
+
+/* Mobile */
+@media (max-width: 560px) {
+  .scrollingCard {
+    padding: 0.5rem 1rem;
+  }
 }
 
 @keyframes spin_4991 {
