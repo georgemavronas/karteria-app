@@ -1,7 +1,6 @@
 .services-page {
   background-color: var(--color-bg);
   margin-top: var(--header-height);
-  min-height: var(--body-noscroll-heigth);
 }
 
 .services-intro {
