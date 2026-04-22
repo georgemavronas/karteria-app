@@ -8,7 +8,6 @@ function ServiceStudies() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-inner">
-          <p className="tag">Υπηρεσίες</p>
           <h1 className="title">Μελέτες για Τεχνικά Έργα</h1>
           <p className="subtitle">Technical Studies</p>
         </div>

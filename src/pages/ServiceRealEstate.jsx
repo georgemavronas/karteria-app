@@ -8,7 +8,6 @@ function ServiceRealEstate() {
       {/* Hero */}
       <section className="hero">
         <div className="hero-inner">
-          <p className="tag">Υπηρεσίες</p>
           <h1 className="title">Ανέγερση &amp; Αξιοποίηση Ακινήτων</h1>
           <p className="subtitle">Real Estate Development &amp; Asset Management</p>
         </div>

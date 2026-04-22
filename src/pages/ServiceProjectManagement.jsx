@@ -7,7 +7,6 @@ function ServiceProjectManagement() {
 
       <section className="pm-hero">
         <div className="pm-hero-inner">
-          <p className="pm-hero-label">Υπηρεσίες</p>
           <h1 className="pm-hero-title">Διοίκηση &amp; Διαχείριση Τεχνικών Έργων</h1>
           <p className="pm-hero-subtitle">Project &amp; Construction Management</p>
         </div>

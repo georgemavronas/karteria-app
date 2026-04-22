@@ -7,7 +7,6 @@ function ServiceSustainability() {
 
       <section className="hero">
         <div className="hero-inner">
-          <p className="tag">Υπηρεσίες</p>
           <h1 className="title">Βιωσιμότητα &amp; Πιστοποιήσεις</h1>
           <p className="subtitle">Sustainability &amp; Certifications</p>
         </div>
