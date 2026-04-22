@@ -55,7 +55,7 @@
   height: 100%;
   gap: 8px;
   grid-template-columns: 1fr 1fr 1fr;
-  padding: max(50px, 4.1666666667vw) max(15px, 5.2083333333vw) max(80px, 6.7708333333vw);
+  padding: max(50px, 5.2083333333vw);
 }
 
 .homepage__arrow {
