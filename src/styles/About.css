@@ -2,64 +2,70 @@
   background-color: #f0f2f5;
 }
 
-/* --- Εισαγωγή --- */
+/* --- Intro Section --- */
 .about-intro {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 80px 16px 48px;
+  background-color: #0b0f19;
+  padding: clamp(60px, 8vw, 120px) clamp(24px, 6vw, 100px);
 }
 
 .about-intro h1 {
-  font-size: 2rem;
+  font-size: clamp(1.8rem, 4vw, 3.5rem);
   font-weight: 700;
-  color: #007da5;
-  margin-bottom: 16px;
+  color: #ffffff;
+  margin-bottom: clamp(12px, 2vw, 20px);
+  max-width: 900px;
+  line-height: 1.2;
 }
 
-.about-intro p {
-  font-size: 1rem;
-  color: #4b5563;
-  line-height: 1.7;
-  max-width: 760px;
+.about-intro > p {
+  font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+  color: rgba(255, 255, 255, 0.6);
+  line-height: 1.75;
+  max-width: 680px;
 }
 
 .about-intro-body {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  max-width: 760px;
-  border-top: 1px solid #d1d5db;
-  padding-top: 32px;
+  margin-top: clamp(32px, 5vw, 64px);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(20px, 3vw, 48px);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding-top: clamp(24px, 4vw, 48px);
 }
 
-/* --- Όραμα --- */
+.about-intro-body p {
+  font-size: clamp(0.8rem, 1.1vw, 0.9rem);
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.8;
+}
+
+/* --- Vision Section --- */
 .about-vision {
   background-color: #ffffff;
   border-top: 1px solid #d1d5db;
   border-bottom: 1px solid #d1d5db;
-  padding: 48px 16px;
+  padding: clamp(48px, 6vw, 80px) clamp(24px, 6vw, 100px);
 }
 
 .about-vision h2 {
   max-width: 1280px;
-  margin: 0 auto 16px;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #1f2937;
+  margin: 0 auto clamp(12px, 2vw, 20px);
+  font-size: clamp(1.25rem, 2.5vw, 2rem);
+  font-weight: 700;
+  color: #007da5;
 }
 
 .about-vision p {
   max-width: 1280px;
   margin: 0 auto;
-  font-size: 1rem;
+  font-size: clamp(0.95rem, 1.5vw, 1.1rem);
   color: #4b5563;
-  line-height: 1.7;
+  line-height: 1.8;
 }
 
-/* --- Grid τομέων --- */
+/* --- Grid tomon drastiriotitas --- */
 .about-bottom {
-  padding: 48px 16px;
+  padding: clamp(32px, 5vw, 64px) clamp(24px, 6vw, 100px);
 }
 
 .about-grid {
@@ -72,7 +78,7 @@
 }
 
 .about-card {
-  padding: 40px;
+  padding: clamp(24px, 3vw, 40px);
   border-right: 1px solid #d1d5db;
   border-bottom: 1px solid #d1d5db;
   background-color: transparent;
@@ -85,14 +91,14 @@
 }
 
 .about-card h3 {
-  font-size: 1.25rem;
+  font-size: clamp(1rem, 1.5vw, 1.25rem);
   font-weight: 600;
   color: #007da5;
   margin-bottom: 16px;
 }
 
 .about-card p {
-  font-size: 0.875rem;
+  font-size: clamp(0.8rem, 1vw, 0.875rem);
   color: #4b5563;
   line-height: 1.7;
   margin-bottom: 12px;
@@ -103,11 +109,22 @@
 }
 
 /* --- Responsive --- */
-@media (max-width: 768px) {
-  .about-intro { padding: 56px 16px 32px; }
-  .about-intro h1 { font-size: 1.5rem; }
-  .about-vision { padding: 32px 16px; }
-  .about-bottom { padding: 32px 16px; }
-  .about-card { padding: 24px; }
-  .about-grid { grid-template-columns: 1fr; }
+@media (max-width: 900px) {
+  .about-intro-body {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-intro-body {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-intro {
+    padding-top: calc(75px + 42px); 
+  }
 }
