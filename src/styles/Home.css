@@ -53,7 +53,7 @@
 .home_grid__wrapper {
   display: grid;
   height: 100%;
-  gap: 8px;
+  gap: 24px;
   grid-template-columns: 1fr 1fr 1fr;
   padding: max(50px, 5.2083333333vw);
 }
