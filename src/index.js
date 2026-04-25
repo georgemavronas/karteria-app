@@ -7,7 +7,7 @@ import "./styles/global.css";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <BrowserRouter>
+  <BrowserRouter basename="/karteria-app">
     <App />
   </BrowserRouter>
 );
