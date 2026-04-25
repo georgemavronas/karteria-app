@@ -28,7 +28,7 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: var(--color-accent-500); /* Portokali apo to design system mou */
+  background-color: var(--color-secondary); /* Portokali apo to design system mou */
   z-index: 99999;
   display: flex;
   justify-content: center;
@@ -39,7 +39,7 @@ img {
 
 /* Otan prostethei i klasi .active, arxizei to animation */
 .transition-overlay.active {
-  animation: overlaySlide 1s ease-in-out forwards;
+  animation: overlaySlide 2s ease-in-out forwards;
 }
 
 /* To logo sti mesi tou overlay */
@@ -51,15 +51,15 @@ img {
 
 /* To logo emfanizetai mazi me to overlay */
 .transition-overlay.active .transition-logo {
-  animation: logoFade 1s ease-in-out forwards;
+  animation: logoFade 2s ease-in-out forwards;
 }
 
 /* Katevainei apo pano, menei ligo, fevgei pros ta kato */
 @keyframes overlaySlide {
-  0%   { transform: translateY(-100%); }
+  0%   { transform: translateY(0%); }
   35%  { transform: translateY(0%); }
   65%  { transform: translateY(0%); }
-  100% { transform: translateY(100%); }
+  100% { transform: translateY(-100%); }
 }
 
 /* To logo xekinaei adino, ginetai orato, xana adino */
@@ -67,5 +67,5 @@ img {
   0%   { opacity: 0; }
   35%  { opacity: 1; }
   65%  { opacity: 1; }
-  100% { opacity: 0; }
+  100% { opacity: 1; }
 }
