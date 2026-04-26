@@ -36,8 +36,8 @@ function Home() {
             <source
               src={
                 isPortrait
-                  ? "/content/landingPagePortrait.mp4"
-                  : "/content/landingPageLandscape.mp4"
+                  ? process.env.PUBLIC_URL + "/content/landingPagePortrait.mp4"
+                  : process.env.PUBLIC_URL + "/content/landingPageLandscape.mp4"
               }
               type="video/mp4"
             />
@@ -55,9 +55,9 @@ function Home() {
         </section>
         <section className="home-section-cards">
           <div class="home_grid__wrapper">
-                        <Card image="/pictures/aboutUs_thubnail.jpg" title="ABOUT US" path="/about"/>  
-            <Card image="/pictures/services_thubnail.jpg" title="SERVICES" path="/services"/>
-            <Card image="/pictures/contact_thubnail.jpg" title="CONTACT" path="/contact"/>               
+                        <Card image={process.env.PUBLIC_URL + "/pictures/aboutUs_thubnail.jpg"} title="ABOUT US" path="/about"/>  
+            <Card image={process.env.PUBLIC_URL + "/pictures/services_thubnail.jpg"} title="SERVICES" path="/services"/>
+            <Card image={process.env.PUBLIC_URL + "/pictures/contact_thubnail.jpg"} title="CONTACT" path="/contact"/>               
           </div>
           
         </section>
