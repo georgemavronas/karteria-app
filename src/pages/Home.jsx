@@ -1,6 +1,6 @@
 import Card from "../components/Card";
 import ScrollerWords from "../components/scrollerWords";
-import "../styles/Home.css";
+import styles from "../styles/Home.module.css";
 import { useEffect, useState } from "react";
 
 function Home() {
@@ -22,8 +22,8 @@ function Home() {
   return (
     <div>
       
-      <main className="home">
-        <section className="hero">
+      <main className={styles.home}>
+        <section className={styles.hero}>
           <video
             key={isPortrait ? "portrait" : "landscape"}
             muted
@@ -31,7 +31,7 @@ function Home() {
             loop
             playsInline
             preload="metadata"
-            className="hero-video"
+            className={styles['hero-video']}
           >
             <source
               src={
@@ -42,10 +42,10 @@ function Home() {
               type="video/mp4"
             />
           </video> 
-          <div className="gradient-overlay-hero-video"></div>
+          <div className={styles['gradient-overlay-hero-video']}></div>
           <ScrollerWords/>        
-          <a className="homepage__arrow">
-            <span className="homepage__arrow__icon">
+          <a className={styles['homepage__arrow']}>
+            <span className={styles['homepage__arrow__icon']}>
                 <svg viewBox="0 0 7 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.48357 22.1206L7 18.6042L4.22628 18.6172L4.22628 -1.21243e-07L2.83943 -1.81864e-07L2.83943 18.6237L-8.14651e-07 18.637L3.48357 22.1206Z" fill="white"></path>
                 </svg>
@@ -53,8 +53,8 @@ function Home() {
           </a>
 
         </section>
-        <section className="home-section-cards">
-          <div class="home_grid__wrapper">
+        <section className={styles['home-section-cards']}>
+          <div className={styles.home_grid__wrapper}>
                         <Card image={process.env.PUBLIC_URL + "/pictures/aboutUs_thubnail.jpg"} title="ABOUT US" path="/about"/>  
             <Card image={process.env.PUBLIC_URL + "/pictures/services_thubnail.jpg"} title="SERVICES" path="/services"/>
             <Card image={process.env.PUBLIC_URL + "/pictures/contact_thubnail.jpg"} title="CONTACT" path="/contact"/>               

@@ -1,19 +1,19 @@
 ﻿import React from 'react';
-import '../styles/ServiceSustainability.css';
+import styles from '../styles/ServiceSustainability.module.css';
 
 function ServiceSustainability() {
   return (
-    <div className="page">
+    <div className={styles.page}>
 
-      <section className="hero">
-        <div className="hero-inner">
-          <h1 className="title">Βιωσιμότητα &amp; Πιστοποιήσεις</h1>
-          <p className="subtitle">Sustainability &amp; Certifications</p>
+      <section className={styles.hero}>
+        <div className={styles['hero-inner']}>
+          <h1 className={styles.title}>Βιωσιμότητα &amp; Πιστοποιήσεις</h1>
+          <p className={styles.subtitle}>Sustainability &amp; Certifications</p>
         </div>
       </section>
 
-      <section className="intro">
-        <div className="wrap">
+      <section className={styles.intro}>
+        <div className={styles.wrap}>
           <p>
             Η ΚΑΡΤΕΡΙΑ Κατασκευαστική &amp; Συμβουλευτική παρέχει εξειδικευμένες υπηρεσίες
             βιωσιμότητας, περιβαλλοντικού σχεδιασμού και πιστοποιήσεων έργων, με στόχο την
@@ -29,11 +29,11 @@ function ServiceSustainability() {
       </section>
 
       {/* Αντικείμενο Υπηρεσιών */}
-      <section className="services">
-        <div className="wrap">
-          <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
-          <p className="lead">Οι υπηρεσίες περιλαμβάνουν:</p>
-          <ul className="list">
+      <section className={styles.services}>
+        <div className={styles.wrap}>
+          <h2 className={styles.heading}>Αντικείμενο Υπηρεσιών</h2>
+          <p className={styles.lead}>Οι υπηρεσίες περιλαμβάνουν:</p>
+          <ul className={styles.list}>
             <li>Εκπόνηση περιβαλλοντικών μελετών και τεχνικών περιβαλλοντικών τεκμηριώσεων</li>
             <li>
               Σύνταξη Μελετών Περιβαλλοντικών Επιπτώσεων (ΜΠΕ) και υποστήριξη στη διαδικασία
@@ -64,13 +64,13 @@ function ServiceSustainability() {
       </section>
 
       {/* LEED */}
-      <section className="leed">
-        <div className="wrap">
-          <div className="leed-header">
-            <span className="badge">LEED</span>
-            <h2 className="heading">Πιστοποίηση LEED</h2>
+      <section className={styles.leed}>
+        <div className={styles.wrap}>
+          <div className={styles['leed-header']}>
+            <span className={styles.badge}>LEED</span>
+            <h2 className={styles.heading}>Πιστοποίηση LEED</h2>
           </div>
-          <div className="leed-body">
+          <div className={styles['leed-body']}>
             <p>
               Η πιστοποίηση LEED αποτελεί διεθνώς αναγνωρισμένο σύστημα αξιολόγησης
               βιωσιμότητας κτιρίων, το οποίο αναπτύχθηκε από το U.S. Green Building Council
@@ -88,11 +88,11 @@ function ServiceSustainability() {
               κατατάσσονται σε επίπεδα πιστοποίησης, όπως Certified, Silver, Gold και
               Platinum, ανάλογα με την επίδοσή τους.
             </p>
-            <div className="levels">
-              <div className="level certified">Certified</div>
-              <div className="level silver">Silver</div>
-              <div className="level gold">Gold</div>
-              <div className="level platinum">Platinum</div>
+            <div className={styles.levels}>
+              <div className={`${styles.level} ${styles.certified}`}>Certified</div>
+              <div className={`${styles.level} ${styles.silver}`}>Silver</div>
+              <div className={`${styles.level} ${styles.gold}`}>Gold</div>
+              <div className={`${styles.level} ${styles.platinum}`}>Platinum</div>
             </div>
             <p>
               Η ενσωμάτωση των αρχών της βιωσιμότητας συμβάλλει στη δημιουργία έργων υψηλής
@@ -103,9 +103,9 @@ function ServiceSustainability() {
       </section>
 
       {/* Προσέγγιση */}
-      <section className="approach">
-        <div className="wrap">
-          <h2 className="heading">Η Προσέγγισή μας</h2>
+      <section className={styles.approach}>
+        <div className={styles.wrap}>
+          <h2 className={styles.heading}>Η Προσέγγισή μας</h2>
           <p>
             Η ΚΑΡΤΕΡΙΑ αντιμετωπίζει τη βιωσιμότητα και τις πιστοποιήσεις ως βασικό παράγοντα
             σχεδιασμού και ανάπτυξης των έργων, συμβάλλοντας στη δημιουργία αποδοτικών,

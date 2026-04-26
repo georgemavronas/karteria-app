@@ -1,19 +1,19 @@
 ﻿import React from 'react';
-import '../styles/ServiceProjectManagement.css';
+import styles from '../styles/ServiceProjectManagement.module.css';
 
 function ServiceProjectManagement() {
   return (
-    <div className="pm-page">
+    <div className={styles['pm-page']}>
 
-      <section className="pm-hero">
-        <div className="pm-hero-inner">
-          <h1 className="pm-hero-title">Διοίκηση &amp; Διαχείριση Τεχνικών Έργων</h1>
-          <p className="pm-hero-subtitle">Project &amp; Construction Management</p>
+      <section className={styles['pm-hero']}>
+        <div className={styles['pm-hero-inner']}>
+          <h1 className={styles['pm-hero-title']}>Διοίκηση &amp; Διαχείριση Τεχνικών Έργων</h1>
+          <p className={styles['pm-hero-subtitle']}>Project &amp; Construction Management</p>
         </div>
       </section>
 
-      <section className="pm-intro">
-        <div className="pm-container">
+      <section className={styles['pm-intro']}>
+        <div className={styles['pm-container']}>
           <p>
             Η ΚΑΡΤΕΡΙΑ Κατασκευαστική &amp; Συμβουλευτική παρέχει ολοκληρωμένες υπηρεσίες
             διοίκησης και διαχείρισης τεχνικών έργων, καλύπτοντας το σύνολο των διαδικασιών
@@ -30,13 +30,13 @@ function ServiceProjectManagement() {
       </section>
 
       {/* Αντικείμενο Υπηρεσιών */}
-      <section className="pm-services-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Αντικείμενο Υπηρεσιών</h2>
-          <p className="pm-section-lead">
+      <section className={styles['pm-services-section']}>
+        <div className={styles['pm-container']}>
+          <h2 className={styles['pm-section-title']}>Αντικείμενο Υπηρεσιών</h2>
+          <p className={styles['pm-section-lead']}>
             Οι υπηρεσίες διοίκησης και διαχείρισης τεχνικών έργων περιλαμβάνουν:
           </p>
-          <ul className="pm-list">
+          <ul className={styles['pm-list']}>
             <li>Διοίκηση και συντονισμό του έργου σε επίπεδο Project &amp; Construction Management</li>
             <li>Σχεδιασμό, έλεγχο και παρακολούθηση της κατασκευαστικής διαδικασίας</li>
             <li>Παρακολούθηση της ορθής και εμπρόθεσμης εκτέλεσης του έργου σύμφωνα με την εγκεκριμένη μελέτη και τις εγκεκριμένες τροποποιήσεις της</li>
@@ -47,7 +47,7 @@ function ServiceProjectManagement() {
             <li>Συντονισμό όλων των εμπλεκόμενων μερών (μελετητές, ανάδοχο, υπεργολάβους, προμηθευτές)</li>
             <li>Υποστήριξη του Κυρίου του Έργου στη διαχείριση τεχνικών, χρονικών και οικονομικών ζητημάτων</li>
           </ul>
-          <p className="pm-note">
+          <p className={styles['pm-note']}>
             Η παρακολούθηση του έργου πραγματοποιείται με συστηματικό τρόπο, ώστε να
             εντοπίζονται έγκαιρα αποκλίσεις και να λαμβάνονται τεκμηριωμένες και θεσμικά
             ορθές αποφάσεις.
@@ -56,8 +56,8 @@ function ServiceProjectManagement() {
       </section>
 
       {/* Ποιότητα & Commissioning */}
-      <section className="pm-cost-section">
-        <div className="pm-container">
+      <section className={styles['pm-cost-section']}>
+        <div className={styles['pm-container']}>
           <h2 className="pm-section-title">Ποιότητα Έργου, Commissioning &amp; Λειτουργική Παράδοση</h2>
           <p>
             Στο πλαίσιο της διοίκησης και διαχείρισης των τεχνικών έργων καταρτίζεται,
@@ -89,40 +89,40 @@ function ServiceProjectManagement() {
             (Leadership in Energy and Environmental Design), όπου αυτό εφαρμόζεται.
           </p>
 
-          <div className="pm-iso-grid">
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 9001</p>
-              <p className="pm-iso-label">Ποιότητα</p>
+          <div className={styles['pm-iso-grid']}>
+            <div className={styles['pm-iso-card']}>
+              <p className={styles['pm-iso-code']}>ISO 9001</p>
+              <p className={styles['pm-iso-label']}>Ποιότητα</p>
             </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 14001</p>
-              <p className="pm-iso-label">Περιβάλλον</p>
+            <div className={styles['pm-iso-card']}>
+              <p className={styles['pm-iso-code']}>ISO 14001</p>
+              <p className={styles['pm-iso-label']}>Περιβάλλον</p>
             </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 21502</p>
-              <p className="pm-iso-label">Project Management</p>
+            <div className={styles['pm-iso-card']}>
+              <p className={styles['pm-iso-code']}>ISO 21502</p>
+              <p className={styles['pm-iso-label']}>Project Management</p>
             </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 45001</p>
-              <p className="pm-iso-label">Υγεία &amp; Ασφάλεια</p>
+            <div className={styles['pm-iso-card']}>
+              <p className={styles['pm-iso-code']}>ISO 45001</p>
+              <p className={styles['pm-iso-label']}>Υγεία &amp; Ασφάλεια</p>
             </div>
-            <div className="pm-iso-card pm-iso-card">
-              <p className="pm-iso-code">LEED</p>
-              <p className="pm-iso-label">Commissioning</p>
+            <div className={styles['pm-iso-card']}>
+              <p className={styles['pm-iso-code']}>LEED</p>
+              <p className={styles['pm-iso-label']}>Commissioning</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Θεσμικό Πλαίσιο */}
-      <section className="pm-legal-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
+      <section className={styles['pm-legal-section']}>
+        <div className={styles['pm-container']}>
+          <h2 className={styles['pm-section-title']}>Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
           <p>
             Η διοίκηση και διαχείριση τεχνικών έργων πραγματοποιείται σε πλήρη συμμόρφωση
             με το ισχύον θεσμικό πλαίσιο δημοσίων έργων και συμβάσεων.
           </p>
-          <ul className="pm-list pm-list--legal">
+          <ul className={`${styles['pm-list']} ${styles['pm-list--legal']}`}>
             <li>
               <strong>Ν. 4412/2016</strong> — καθορίζει τις διαδικασίες ανάθεσης, τις
               συμβατικές υποχρεώσεις, καθώς και τους μηχανισμούς ελέγχου, πιστοποίησης και
@@ -144,9 +144,9 @@ function ServiceProjectManagement() {
       </section>
 
       {/* Προσέγγιση */}
-      <section className="pm-approach-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Η Προσέγγισή μας</h2>
+      <section className={styles['pm-approach-section']}>
+        <div className={styles['pm-container']}>
+          <h2 className={styles['pm-section-title']}>Η Προσέγγισή μας</h2>
           <p>
             Η διοίκηση και διαχείριση τεχνικών έργων στην ΚΑΡΤΕΡΙΑ βασίζονται στη
             μεθοδικότητα, στη θεσμική γνώση και στη συστηματική τεχνική παρακολούθηση,

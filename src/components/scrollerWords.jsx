@@ -1,16 +1,16 @@
-import "../styles/scrollerWords.css";
+import styles from "../styles/scrollerWords.module.css";
 
 
 const ScrollerWords = (props) => {
   return (
-    <div className="scrollingCard">
-      <div className="scrollingLoader">
-        <div className="scrollingWords">
-          <span className="scrollingWord">Design</span>
-          <span className="scrollingWord">Engineering</span>
-          <span className="scrollingWord">Management</span>
-          <span className="scrollingWord">Quality</span>
-          <span className="scrollingWord">Sustainability</span>
+    <div className={styles.scrollingCard}>
+      <div className={styles.scrollingLoader}>
+        <div className={styles.scrollingWords}>
+          <span className={styles.scrollingWord}>Design</span>
+          <span className={styles.scrollingWord}>Engineering</span>
+          <span className={styles.scrollingWord}>Management</span>
+          <span className={styles.scrollingWord}>Quality</span>
+          <span className={styles.scrollingWord}>Sustainability</span>
         </div>
       </div>
     </div>
