@@ -27,16 +27,19 @@
 .about-intro-body {
   margin-top: clamp(32px, 5vw, 64px);
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: clamp(20px, 3vw, 48px);
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(24px, 4vw, 56px);
   border-top: 1px solid rgba(255, 255, 255, 0.12);
-  padding-top: clamp(24px, 4vw, 48px);
+  padding-top: clamp(32px, 4vw, 56px);
 }
 
 .about-intro-body p {
   font-size: clamp(0.8rem, 1.1vw, 0.9rem);
   color: rgba(255, 255, 255, 0.5);
   line-height: 1.8;
+  margin-bottom: 0;
+  padding-left: clamp(16px, 2vw, 24px);
+  border-left: 2px solid #007da5;
 }
 
 /* --- Vision Section --- */
@@ -112,14 +115,12 @@
 @media (max-width: 900px) {
   .about-intro-body {
     grid-template-columns: 1fr 1fr;
-    gap: 24px;
   }
 }
 
 @media (max-width: 600px) {
   .about-intro-body {
     grid-template-columns: 1fr;
-    gap: 16px;
   }
   .about-grid {
     grid-template-columns: 1fr;
