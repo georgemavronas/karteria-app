@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/karteria-app/static/css/main.97104289.css",
-    "main.js": "/karteria-app/static/js/main.1e684049.js",
+    "main.js": "/karteria-app/static/js/main.d2cdcb7f.js",
     "index.html": "/karteria-app/index.html",
     "main.97104289.css.map": "/karteria-app/static/css/main.97104289.css.map",
-    "main.1e684049.js.map": "/karteria-app/static/js/main.1e684049.js.map"
+    "main.d2cdcb7f.js.map": "/karteria-app/static/js/main.d2cdcb7f.js.map"
   },
   "entrypoints": [
     "static/css/main.97104289.css",
-    "static/js/main.1e684049.js"
+    "static/js/main.d2cdcb7f.js"
   ]
 }
