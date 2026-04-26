@@ -21,7 +21,7 @@ function Navbar() {
           coloredBg ? "coloredNavbar" : ""
         }`}>
         <Link to="/" className="nav-logo" onClick={closeMenu}>
-          <img src="/logos/karteria_logo_white.svg" alt="Karteria Logo" />
+          <img src={process.env.PUBLIC_URL + '/logos/karteria_logo_white.svg'} alt="Karteria Logo" />
         </Link>
 
         <button

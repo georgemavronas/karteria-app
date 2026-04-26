@@ -19,7 +19,7 @@ function TransitionOverlay() {
 
   return (
     <div ref={overlayRef} id="transition-overlay" className="transition-overlay">
-      <img src="/logos/karteria_logo_k_letter_white.svg" alt="Logo" className="transition-logo" />
+      <img src={process.env.PUBLIC_URL + '/logos/karteria_logo_k_letter_white.svg'} alt="Logo" className="transition-logo" />
     </div>
   );
 }
