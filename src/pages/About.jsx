@@ -1,24 +1,24 @@
-import styles from "../styles/About.module.css";
+import "../styles/About.css";
 
 function About() {
   return (
-    <main className={styles.about}>
+    <main className="about">
 
       {/* Εισαγωγή */}
-      <section className={styles['about-intro']}>
+      <section className="about-intro">
         <h1>ΚΑΡΤΕΡΙΑ ΣΥΜΒΟΥΛΕΥΤΙΚΗ Ε.Ε.</h1>
         <p>
           Η ΚΑΡΤΕΡΙΑ ΣΥΜΒΟΥΛΕΥΤΙΚΗ Ε.Ε. δραστηριοποιείται στον χώρο των κατασκευών και της
           συμβουλευτικής, προσφέροντας ολοκληρωμένες λύσεις σε ιδιώτες και επιχειρήσεις.
         </p>
-        <div className={styles['about-intro-body']}>
+        <div className="about-intro-body">
           <p>Δραστηριοποιούμαστε στον χώρο των κατασκευών και της συμβουλευτικής, προσφέροντας ολοκληρωμένες λύσεις σε ιδιώτες και επιχειρήσεις. Αναλαμβάνουμε έργα από τη μελέτη και τον σχεδιασμό έως την πλήρη κατασκευή και διαχείριση.</p>
           <p>Η ομάδα μας αποτελείται από μηχανικούς, τεχνικούς και συμβούλους με πολυετή εμπειρία, οι οποίοι εργάζονται με γνώμονα την ποιότητα, τη συνέπεια και τη βιωσιμότητα — συνδυάζοντας τεχνική γνώση με καινοτόμο σκέψη.</p>
         </div>
       </section>
 
       {/* Όραμα */}
-      <section className={styles['about-vision']}>
+      <section className="about-vision">
         <h2>Το όραμά μας</h2>
         <p>
           Να δημιουργούμε έργα που βελτιώνουν την καθημερινότητα, σέβονται το περιβάλλον
@@ -27,10 +27,10 @@ function About() {
       </section>
 
       {/* Τομείς δραστηριότητας */}
-      <section className={styles['about-bottom']}>
-        <div className={styles['about-grid']}>
+      <section className="about-bottom">
+        <div className="about-grid">
 
-          <div className={styles['about-card']}>
+          <div className="about-card">
             <h3>Ανέγερση & Αξιοποίηση Ακινήτων</h3>
             <p>
               Η ΚΑΡΤΕΡΙΑ Κατασκευαστική & Συμβουλευτική δραστηριοποιείται στην ανέγερση και
@@ -45,7 +45,7 @@ function About() {
             </p>
           </div>
 
-          <div className={styles['about-card']}>
+          <div className="about-card">
             <h3>Βιωσιμότητα & Περιβαλλοντικός Σχεδιασμός</h3>
             <p>
               Η ΚΑΡΤΕΡΙΑ Κατασκευαστική & Συμβουλευτική παρέχει εξειδικευμένες υπηρεσίες
@@ -60,7 +60,7 @@ function About() {
             </p>
           </div>
 
-          <div className={styles['about-card']}>
+          <div className="about-card">
             <h3>Διοίκηση & Διαχείριση Έργων</h3>
             <p>
               Η ΚΑΡΤΕΡΙΑ Κατασκευαστική & Συμβουλευτική παρέχει ολοκληρωμένες υπηρεσίες
@@ -76,7 +76,7 @@ function About() {
             </p>
           </div>
 
-          <div className={styles['about-card']}>
+          <div className="about-card">
             <h3>Εκπόνηση & Διοίκηση Μελετών</h3>
             <p>
               Η ΚΑΡΤΕΡΙΑ Κατασκευαστική & Συμβουλευτική παρέχει υπηρεσίες εκπόνησης,

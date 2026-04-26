@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import styles from "../styles/Navbar.module.css";
+import "../styles/Navbar.css";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,13 +17,15 @@ function Navbar() {
 
   return (
     <>
-      <header className={`${styles.navbar} ${coloredBg ? styles.coloredNavbar : ''}`}>
-        <Link to="/" className={styles['nav-logo']} onClick={closeMenu}>
+      <header className={`navbar ${
+          coloredBg ? "coloredNavbar" : ""
+        }`}>
+        <Link to="/" className="nav-logo" onClick={closeMenu}>
           <img src={process.env.PUBLIC_URL + '/logos/karteria_logo_white.svg'} alt="Karteria Logo" />
         </Link>
 
         <button
-          className={`${styles.hamburger} ${open ? styles.open : ''}`}
+          className={`hamburger ${open ? "open" : ""}`}
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle menu"
         >
@@ -33,11 +35,11 @@ function Navbar() {
         </button>
       </header>
 
-      <div className={`${styles['nav-overlay']} ${open ? styles.visible : ''}`}>
-        <button className={styles['nav-close']} onClick={closeMenu} aria-label="Close menu">
+      <div className={`nav-overlay ${open ? "visible" : ""}`}>
+        <button className="nav-close" onClick={closeMenu} aria-label="Close menu">
           &#x2715;
         </button>
-        <nav className={styles['nav-menu']}>
+        <nav className="nav-menu">
           <ul>
             <li><Link to="/" onClick={closeMenu}>Home</Link></li>
             <li><Link to="/about" onClick={closeMenu}>About Us</Link></li>

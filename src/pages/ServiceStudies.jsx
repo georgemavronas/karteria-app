@@ -1,21 +1,21 @@
 ﻿import React from 'react';
-import styles from '../styles/ServiceStudies.module.css';
+import '../styles/ServiceStudies.css';
 
 function ServiceStudies() {
   return (
-    <div className={styles.page}>
+    <div className="page">
 
       {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles['hero-inner']}>
-          <h1 className={styles.title}>Μελέτες για Τεχνικά Έργα</h1>
-          <p className={styles.subtitle}>Technical Studies</p>
+      <section className="hero">
+        <div className="hero-inner">
+          <h1 className="title">Μελέτες για Τεχνικά Έργα</h1>
+          <p className="subtitle">Technical Studies</p>
         </div>
       </section>
 
       {/* Intro */}
-      <section className={styles.intro}>
-        <div className={styles.wrap}>
+      <section className="intro">
+        <div className="wrap">
           <p>
             Η ΚΑΡΤΕΡΙΑ Κατασκευαστική &amp; Συμβουλευτική παρέχει υπηρεσίες εκπόνησης,
             διοίκησης και τεχνικού ελέγχου μελετών για τεχνικά έργα, με στόχο τη θεσμικά
@@ -32,12 +32,12 @@ function ServiceStudies() {
       </section>
 
       {/* Αντικείμενο */}
-      <section className={styles.services}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Αντικείμενο Υπηρεσιών</h2>
-          <p className={styles.lead}>Οι υπηρεσίες μελετών για τεχνικά έργα περιλαμβάνουν:</p>
+      <section className="services">
+        <div className="wrap">
+          <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
+          <p className="lead">Οι υπηρεσίες μελετών για τεχνικά έργα περιλαμβάνουν:</p>
 
-          <ul className={styles.list}>
+          <ul className="list">
             <li>Εκπόνηση και συντονισμό μελετών σε όλα τα απαιτούμενα στάδια ωρίμανσης</li>
             <li>Έλεγχο πληρότητας, συνοχής και κανονιστικής συμβατότητας των μελετών</li>
             <li>Εκπόνηση, έλεγχο και συντονισμό αρχιτεκτονικών μελετών</li>
@@ -52,10 +52,10 @@ function ServiceStudies() {
             <li>Υποστήριξη στη διαδικασία αδειοδότησης και στις απαιτούμενες εγκρίσεις</li>
           </ul>
 
-          <p className={styles.sublead}>
+          <p className="sublead">
             Στο πλαισιο της ωριμανσης και χρηματοδοτικης προετοιμασιας εργων, παρεχονται επιπλεον:
           </p>
-          <ul className={`${styles.list} ${styles['list-alt']}`}>
+          <ul className="list list-alt">
             <li>Εκπόνηση μελετών σκοπιμότητας, βιωσιμότητας και προσβασιμότητας</li>
             <li>Σύνταξη Τεχνικών Δελτίων για υποβολή μελών σε πρόσκληση Ευρωπαϊκών προγραμμάτων (ΕΕ / ΕΣΠΑ)</li>
             <li>Τεκμηρίωση φυσικού αντικειμένου, χρονοδιαγράμματος και βασικών τεχνικών, περιβαλλοντικών και ενεργειακών παραμέτρων, σύμφωνα με τις απαιτήσεις των εκάστοτε προγραμμάτων</li>
@@ -64,33 +64,33 @@ function ServiceStudies() {
       </section>
 
       {/* ISO */}
-      <section className={styles.iso}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Πλαίσιο Οργάνωσης και Ποιοτικής Προσέγγισης</h2>
-          <p className={styles.lead}>
+      <section className="iso">
+        <div className="wrap">
+          <h2 className="heading">Πλαίσιο Οργάνωσης και Ποιοτικής Προσέγγισης</h2>
+          <p className="lead">
             Η εκπόνηση και ο έλεγχος των μελετών οργανώνονται βάσει δομημένων διαδικασιών,
             με στόχο τη συνέπεια, την τεχνική πληρότητα και τη δυνατότητα εφαρμογής των
             μελετών στην υλοποίηση.
           </p>
-          <p className={styles.lead}>
+          <p className="lead">
             Στο πλαίσιο αυτό, η μελετητική διαδικασία βασίζεται στις αρχές των
             ακόλουθων διεθνών προτύπων:
           </p>
-          <div className={styles['iso-grid']}>
-            <div className={styles['iso-card']}>
-              <div className={styles.badge}>ISO 9001</div>
+          <div className="iso-grid">
+            <div className="iso-card">
+              <div className="badge">ISO 9001</div>
               <p>Εφαρμόζεται ως πλαίσιο οργάνωσης και ελέγχου της ποιότητας των μελετητικών παραδοτέων, με υποστήριξη μέσω Προγράμματος Ποιότητας Έργου (ΠΠΕ), διασφαλίζοντας τη συνέπεια, την πληρότητα και την τεκμηρίωση των απαιτήσεων του έργου.</p>
             </div>
-            <div className={styles['iso-card']}>
-              <div className={styles.badge}>ISO 14001</div>
+            <div className="iso-card">
+              <div className="badge">ISO 14001</div>
               <p>Λαμβάνεται υπόψη για την ενσωμάτωση περιβαλλοντικών παραμέτρων στον σχεδιασμό και την τεκμηριωμένη συμμόρφωση με το ισχύον περιβαλλοντικό και κανονιστικό πλαίσιο.</p>
             </div>
-            <div className={styles['iso-card']}>
-              <div className={styles.badge}>ISO 50001</div>
+            <div className="iso-card">
+              <div className="badge">ISO 50001</div>
               <p>Αξιοποιείται για την τεχνική τεκμηρίωση και αξιολόγηση ενεργειακών παραμέτρων και αποδοτικότητας, όπου αυτό απαιτείται από το αντικείμενο της μελέτης.</p>
             </div>
-            <div className={styles['iso-card']}>
-              <div className={styles.badge}>ISO 45001</div>
+            <div className="iso-card">
+              <div className="badge">ISO 45001</div>
               <p>Λαμβάνεται υπόψη στη μελετητική φάση μέσω της συνεκτίμησης θεμάτων Υγείας και Ασφάλειας στην Εργασία, ώστε η εφαρμογή των μελετών στην κατασκευή να πραγματοποιείται με μειωμένο τεχνικό και εργοταξιακό κίνδυνο.</p>
             </div>
           </div>
@@ -98,20 +98,20 @@ function ServiceStudies() {
       </section>
 
       {/* Θεσμικό Πλαίσιο */}
-      <section className={styles.legal}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Θεσμικό και Κανονιστικό Πλαίσιο</h2>
-          <p className={styles.lead}>
+      <section className="legal">
+        <div className="wrap">
+          <h2 className="heading">Θεσμικό και Κανονιστικό Πλαίσιο</h2>
+          <p className="lead">
             Οι μελέτες για τεχνικά έργα εκπονούνται σε συμμόρφωση με το ισχύον πολεοδομικό,
             κανονιστικό και τεχνικό πλαίσιο και ιδίως με:
           </p>
-          <ul className={styles.list}>
+          <ul className="list">
             <li><strong>Ν. 4067/2012</strong> (Νέος Οικοδομικός Κανονισμός)</li>
             <li><strong>Ν. 3316/2005</strong> — Ανάθεση και εκτέλεση δημοσίων συμβάσεων εκπόνησης μελετών και παροχής συναφών υπηρεσιών</li>
             <li><strong>Ν. 4495/2017</strong> — για τον έλεγχο και την προστασία του δομημένου περιβάλλοντος</li>
             <li><strong>Ν. 4412/2016</strong> — όπου οι μελέτες αφορούν έργα δημοσίου χαρακτήρα ή έργα που εντάσσονται σε χρηματοδοτικά προγράμματα</li>
           </ul>
-          <p className={styles['legal-note']}>
+          <p className="legal-note">
             Για συγχρηματοδοτούμενα έργα λαμβάνονται υπόψη οι ειδικοί όροι, οδηγοί εφαρμογής
             και απαιτήσεις τεκμηρίωσης των ευρωπαϊκών και εθνικών χρηματοδοτικών προγραμμάτων,
             ώστε οι φάκελοι ένταξης να είναι πλήρεις, θεσμικά συμβατοί και τεχνικά
@@ -121,9 +121,9 @@ function ServiceStudies() {
       </section>
 
       {/* Προσέγγιση */}
-      <section className={styles.approach}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Η Προσέγγισή μας</h2>
+      <section className="approach">
+        <div className="wrap">
+          <h2 className="heading">Η Προσέγγισή μας</h2>
           <p>
             Οι μελέτες για τεχνικά έργα στην ΚΑΡΤΕΡΙΑ αποτελούν τη βάση της επιτυχημένης
             υλοποίησης, συνδυάζοντας τεχνική επάρκεια, θεσμική συνέπεια και ουσιαστική

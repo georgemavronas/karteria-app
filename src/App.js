@@ -1,4 +1,4 @@
-import styles from "./App.module.css";
+import "./App.css";
 import "./index.css";
 import { Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
@@ -26,11 +26,11 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <div className={styles['app-wrapper']}>
+    <div className="app-wrapper">
       <ScrollToTop />
       <TransitionOverlay />
       <Navbar />
-      <main className={styles['app-main']}>
+      <main className="app-main">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />

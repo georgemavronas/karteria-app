@@ -1,21 +1,21 @@
 ﻿import React from 'react';
-import styles from '../styles/ServiceRealEstate.module.css';
+import '../styles/ServiceRealEstate.css';
 
 function ServiceRealEstate() {
   return (
-    <div className={styles.page}>
+    <div className="page">
 
       {/* Hero */}
-      <section className={styles.hero}>
-        <div className={styles['hero-inner']}>
-          <h1 className={styles.title}>Ανέγερση &amp; Αξιοποίηση Ακινήτων</h1>
-          <p className={styles.subtitle}>Real Estate Development &amp; Asset Management</p>
+      <section className="hero">
+        <div className="hero-inner">
+          <h1 className="title">Ανέγερση &amp; Αξιοποίηση Ακινήτων</h1>
+          <p className="subtitle">Real Estate Development &amp; Asset Management</p>
         </div>
       </section>
 
       {/* Intro */}
-      <section className={styles.intro}>
-        <div className={styles.wrap}>
+      <section className="intro">
+        <div className="wrap">
           <p>
             Η ΚΑΡΤΕΡΙΑ Κατασκευαστική &amp; Συμβουλευτική δραστηριοποιείται στην ανέγερση
             και αξιοποίηση ακινήτων, παρέχοντας ολοκληρωμένες υπηρεσίες τεχνικής,
@@ -32,13 +32,13 @@ function ServiceRealEstate() {
       </section>
 
       {/* Αντικείμενο */}
-      <section className={styles.services}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Αντικείμενο Υπηρεσιών</h2>
-          <p className={styles.lead}>
+      <section className="services">
+        <div className="wrap">
+          <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
+          <p className="lead">
             Οι υπηρεσίες ανέγερσης και ανάπτυξης ακινήτων περιλαμβάνουν ενδεικτικά:
           </p>
-          <ul className={styles.list}>
+          <ul className="list">
             <li>Τεχνική και οργανωτική υποστήριξη κατά το στάδιο σχεδιασμού και ωρίμανσης του ακινήτου</li>
             <li>Συντονισμό και παρακολούθηση της κατασκευαστικής διαδικασίας σύμφωνα με τις εγκεκριμένες μελέτες και τα χρονοδιαγράμματα</li>
             <li>Έλεγχο ποιότητας κατασκευής και συμμόρφωσης με τις τεχνικές και κανονιστικές απαιτήσεις</li>
@@ -46,7 +46,7 @@ function ServiceRealEstate() {
             <li>Υποστήριξη στη διαδικασία παράδοσης και παραλαβής του ακινήτου</li>
             <li>Τεχνική υποστήριξη κατά τη φάση λειτουργίας και αξιοποίησης του ακινήτου</li>
           </ul>
-          <p className={styles.note}>
+          <p className="note">
             Η ανέγερση των ακινήτων πραγματοποιείται με έμφαση στη σωστή κατασκευαστική
             πρακτική, την τεχνική αρτιότητα και τον έλεγχο αποκλίσεων που ενδέχεται να
             επηρεάσουν τη λειτουργικότητα και την αξία του έργου.
@@ -55,18 +55,18 @@ function ServiceRealEstate() {
       </section>
 
       {/* Πώληση */}
-      <section className={styles.sale}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Πώληση Ακινήτων</h2>
-          <p className={styles.lead}>
+      <section className="sale">
+        <div className="wrap">
+          <h2 className="heading">Πώληση Ακινήτων</h2>
+          <p className="lead">
             Η ΚΑΡΤΕΡΙΑ δραστηριοποιείται στην πώληση ακινήτων, παρέχοντας ολοκληρωμένες
             υπηρεσίες διάθεσης και μεταβίβασης, με τεχνική τεκμηρίωση και οργανωμένη
             διαχείριση της διαδικασίας. Η προσέγγιση βασίζεται στην πλήρη αποτύπωση των
             χαρακτηριστικών κάθε ακινήτου και στη διασφάλιση της νομιμότητας, με στόχο
             την αξιόπιστη και αποτελεσματική ολοκλήρωση της συναλλαγής.
           </p>
-          <p className={styles.sublead}>Υπηρεσίες</p>
-          <ul className={styles.list}>
+          <p className="sublead">Υπηρεσίες</p>
+          <ul className="list">
             <li>Διάθεση και πώληση ακινήτων (οικιστικών, επαγγελματικών ή επενδυτικών)</li>
             <li>Τεχνικός έλεγχος και αποτύπωση της υφιστάμενης κατάστασης του ακινήτου</li>
             <li>Συγκέντρωση και έλεγχος των απαιτούμενων δικαιολογητικών για τη μεταβίβαση</li>
@@ -80,16 +80,16 @@ function ServiceRealEstate() {
       </section>
 
       {/* Αξιοποίηση */}
-      <section className={styles.services}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Ανέγερση &amp; Αξιοποίηση Ακινήτων</h2>
-          <p className={styles.lead}>
+      <section className="services">
+        <div className="wrap">
+          <h2 className="heading">Ανέγερση &amp; Αξιοποίηση Ακινήτων</h2>
+          <p className="lead">
             Στο πλαίσιο της εκμετάλλευσης ακινήτων, η ΚΑΡΤΕΡΙΑ παρέχει υποστήριξη για τη
             λειτουργική και τεχνική διαχείριση, με στόχο τη βέλτιστη αξιοποίηση και τη
             διαχρονική διατήρηση της αξίας τους.
           </p>
-          <p className={styles.lead}>Οι υπηρεσίες περιλαμβάνουν:</p>
-          <ul className={styles.list}>
+          <p className="lead">Οι υπηρεσίες περιλαμβάνουν:</p>
+          <ul className="list">
             <li>Τεχνική παρακολούθηση της λειτουργίας του ακινήτου, συμπεριλαμβανομένων συστημάτων αυτοματισμού και διαχείρισης κτιρίου (BMS)</li>
             <li>Υποστήριξη στη διαχείριση τεχνικών θεμάτων και αναγκών συντήρησης</li>
             <li>Αξιολόγηση και τεχνικοοικονομική εκτίμηση οικοπέδου ή ακινήτου</li>
@@ -99,7 +99,7 @@ function ServiceRealEstate() {
             <li>Συντονισμός και παρακολούθηση εργασιών κατασκευής ή ανακαίνισης βάσει μελετών και τεχνικών προδιαγραφών</li>
             <li>Έλεγχος ποιότητας και συμμόρφωσης με τις ισχύουσες τεχνικές και κανονιστικές απαιτήσεις</li>
           </ul>
-          <p className={styles.note}>
+          <p className="note">
             Η αξιοποίηση προσεγγίζεται με τρόπο που διασφαλίζει τη λειτουργική επάρκεια,
             την ασφάλεια και τη μακροχρόνια βιωσιμότητα του ακινήτου.
           </p>
@@ -107,9 +107,9 @@ function ServiceRealEstate() {
       </section>
 
       {/* Θεσμικό Πλαίσιο */}
-      <section className={styles.legal}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
+      <section className="legal">
+        <div className="wrap">
+          <h2 className="heading">Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
           <p>
             Οι υπηρεσίες ανέγερσης και εκμετάλλευσης ακινήτων υλοποιούνται σε συμμόρφωση
             με το ισχύον πολεοδομικό και κανονιστικό πλαίσιο, όπως αυτό ορίζεται από τον
@@ -126,9 +126,9 @@ function ServiceRealEstate() {
       </section>
 
       {/* Προσέγγιση */}
-      <section className={styles.approach}>
-        <div className={styles.wrap}>
-          <h2 className={styles.heading}>Η Προσέγγισή μας</h2>
+      <section className="approach">
+        <div className="wrap">
+          <h2 className="heading">Η Προσέγγισή μας</h2>
           <p>
             Η ΚΑΡΤΕΡΙΑ προσεγγίζει την ανάπτυξη και εκμετάλλευση ακινήτων με τεχνική
             συνέπεια, οργανωμένο σχεδιασμό και μακροπρόθεσμη οπτική. Λειτουργούμε ως
