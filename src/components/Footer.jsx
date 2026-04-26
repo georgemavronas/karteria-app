@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { FaLinkedinIn } from 'react-icons/fa';
 import '../styles/Footer.css';
 
@@ -13,16 +14,16 @@ function Footer() {
           </div>
 
           <div className="social">
-            <a href="https://www.linkedin.com/company/karteriaee/" target="_blank" aria-label="LinkedIn"><FaLinkedinIn /></a>
+            <a href="https://www.linkedin.com/company/karteriaee/" target="_blank" rel="noreferrer" aria-label="LinkedIn"><FaLinkedinIn /></a>
           </div>
         </div>
 
         <div className="footer-bottom">
 
           <nav className="footer-nav">
-            <a href="/about">About Us</a>
-            <a href="/services">Services</a>
-            <a href="/contact">Contact</a>
+            <Link to="/about">About Us</Link>
+            <Link to="/services">Services</Link>
+            <Link to="/contact">Contact</Link>
           </nav>
 
           <div className="copyright">
