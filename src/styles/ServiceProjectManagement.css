@@ -287,24 +287,90 @@
 /* ── Responsive ── */
 @media (max-width: 640px) {
     .pm-hero {
-        padding: 64px 20px 48px;
+        padding: 56px 16px 40px;
     }
 
+    .pm-hero-inner {
+        padding-top: 36px;
+    }
+
+    /* sections provide 0 horizontal padding — container handles it */
+    .pm-intro,
+    .pm-services-section,
+    .pm-cost-section,
+    .pm-legal-section,
+    .pm-approach-section {
+        padding: 36px 0;
+    }
+
+    /* single horizontal gutter */
     .pm-container {
-        padding: 0 20px;
+        padding: 0 16px;
     }
 
+    .pm-section-title {
+        font-size: 1.2rem;
+        display: block;
+        width: 100%;
+    }
+
+    .pm-section-lead {
+        font-size: 0.9rem;
+    }
+
+    /* list items tighter on mobile */
+    .pm-list li {
+        padding: 13px 12px 13px 40px;
+        font-size: 0.88rem;
+        line-height: 1.6;
+    }
+
+    .pm-list li::before {
+        left: 13px;
+        top: 14px;
+    }
+
+    .pm-list--legal li {
+        padding: 14px 14px;
+        font-size: 0.88rem;
+        line-height: 1.65;
+    }
+
+    /* body text slightly smaller */
+    .pm-intro p,
+    .pm-cost-section .pm-container > p,
+    .pm-legal-section .pm-container > p,
+    .pm-approach-section .pm-container p {
+        font-size: 0.92rem;
+        line-height: 1.75;
+    }
+
+    .pm-cost-section .pm-container > p:first-of-type {
+        font-size: 0.9rem;
+        padding: 14px 16px;
+    }
+
+    .pm-note {
+        font-size: 0.88rem;
+        padding: 14px 16px;
+    }
+
+    /* ISO badges wrap to 2 per row on small phones */
     .pm-iso-grid {
         gap: 10px;
     }
 
     .pm-iso-card {
-        flex: 1 1 110px;
-        max-width: 140px;
-        padding: 18px 12px 14px;
+        flex: 1 1 100px;
+        max-width: 130px;
+        padding: 16px 10px 12px;
     }
 
-    .pm-section-title {
-        font-size: 1.3rem;
+    .pm-iso-code {
+        font-size: 0.9rem;
+    }
+
+    .pm-iso-label {
+        font-size: 0.7rem;
     }
 }
