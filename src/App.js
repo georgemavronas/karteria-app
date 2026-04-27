@@ -1,6 +1,6 @@
 import "./App.css";
 import "./index.css";
-import { Routes, Route, useLocation } from "react-router-dom";
+import { Routes, Route, useLocation, useNavigationType } from "react-router-dom";
 import { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -25,10 +25,20 @@ function ScrollToTop() {
 }
 
 function App() {
+
+{  
+  // An den einai "back" i "forward" (auto simenei to navigationType !== "POP"), emfanizei to TransitionOverlay. alliws den to emfanizoume
+  //mesa sto navigationType exw to type gia to an einai back h oxi. 
+}
+
+const navigationType = useNavigationType();
   return (
     <div className="app-wrapper">
       <ScrollToTop />
-      <TransitionOverlay />
+      {
+        // An den einai "back" i "forward" (auto simenei to navigationType !== "POP"), emfanizei to TransitionOverlay. alliws den to emfanizoume
+      }
+      {navigationType !== "POP" && <TransitionOverlay />}
       <Navbar />
       <main className="app-main">
         <Routes>
@@ -46,5 +56,6 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
