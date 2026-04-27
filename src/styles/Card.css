@@ -12,27 +12,51 @@
   transition: transform 0.4s ease;
 }
 
-.category-card:hover img {
-  transform: scale(1.05);
-}
-
 .category-card-info {
   position: absolute;
   bottom: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, rgba(0,0,0,0.7), transparent);
   display: flex;
   align-items: flex-end;
   justify-content: center;
   padding-bottom: 24px;
   color: white;
-  font-size: 24px;
-  font-weight: 500;
-  opacity: 0;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  opacity: 0.5;
   transition: opacity 0.4s ease;
+  z-index: 50;
 }
 
 .category-card:hover .category-card-info {
   opacity: 1;
+}
+
+.overlay-card-color {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, var(--color-secondary), transparent);
+  overflow: hidden;
+  width: 100%;
+  height: 0%;
+  transition: .5s ease;
+}
+
+.category-card:hover .overlay-card-color {
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  .category-card-info {
+  opacity: 0.9;
+  }
+  .overlay-card-color {
+  height: 100%;
+  background: linear-gradient(to top, var(--color-secondary) -50%, transparent);
+  }
+  
 }

@@ -4,9 +4,18 @@
 
 /* --- Intro Section --- */
 .about-intro {
+  margin-top: var(--header-height);
   background-color: #0b0f19;
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 100px);
 }
+
+.about-intro-inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 0;
+  color: #ffffff;
+}
+
 
 .about-intro h1 {
   font-size: clamp(1.8rem, 4vw, 3.5rem);

@@ -58,8 +58,6 @@
   padding: max(50px, 5.2083333333vw);
 }
 
-
-
 .homepage__arrow {
     z-index: 9;
     display: flex;
@@ -70,6 +68,7 @@
     padding: 16px 11px;
     position: absolute;
     animation: MoveUpDown 1.5s ease-in-out infinite;
+    margin-bottom: 48px;
 }
 
 .homepage__arrow__icon {
@@ -87,7 +86,6 @@
   }
 }
 
-/* gia Tablet tha exei 2 columns */
 @media (max-width: 900px) {
   .home_grid__wrapper {
     grid-template-columns: 1fr 1fr;
@@ -96,7 +94,6 @@
   }
 }
 
-/* gia Mobile tha exei 1 column */
 @media (max-width: 560px) {
   .home_grid__wrapper {
     grid-template-columns: 1fr;
