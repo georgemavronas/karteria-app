@@ -77,10 +77,13 @@ code {
 
   --color-choco: #d2691e;   
 
-  --color-bg: #FFFAFA;             /* Page background */
+  --color-bg: #edf0f4;             /* Page background */
   --color-surface: #FFFFFF;        /* Cards, sections */
 
-  --color-text: #0B0F19;           /* Main text */
+  --color-text: #0B0F19; 
+  --color-text-inverted: #f8f8f8; 
+  --color-text-inverted-light: #cdcdcd; 
+  --color-text-light: #424b56;             /* Main text */
   --color-text-muted: #64748B;     /* Secondary text */
 
 

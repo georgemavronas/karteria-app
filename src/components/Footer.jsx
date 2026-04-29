@@ -4,6 +4,13 @@ import { FaLinkedinIn } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 function Footer() {
+  const footer = document.querySelector('footer');
+  const footerHeight = footer.getBoundingClientRect().height;
+
+  document.documentElement.style.setProperty(
+  '--footer-height',
+  `${footer.offsetHeight}px`
+  );
   return (
     <footer className="footer">
       <div className="footer-inner">

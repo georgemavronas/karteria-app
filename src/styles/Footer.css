@@ -1,6 +1,6 @@
 .footer {
   background-color: var(--color-secondary);
-  color: #fff;
+  color: var(--color-surface);
   padding: 32px 24px;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .footer-nav a {
-  color: #fff;
+  color: var(--color-surface);
   text-decoration: none;
   font-size: 0.875rem;
   font-weight: 700;
@@ -68,7 +68,7 @@
 }
 
 .footer-nav a:after {
-    background-color: #fff;
+    color: var(--color-surface);
     bottom: 0;
     content: "";
     height: 2px;
@@ -98,7 +98,7 @@
 }
 
 .credits a {
-  color: #fff;
+  color: var(--color-surface);
   text-decoration: none;
   font-weight: 700;
 }

@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import '../styles/ServiceProjectManagement.css';
+import '../styles/ServiceDetails.css';
 
 function ServiceProjectManagement() {
   return (

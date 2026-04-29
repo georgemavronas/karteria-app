@@ -1,11 +1,10 @@
 ﻿import React from 'react';
-import '../styles/ServiceStudies.css';
+import '../styles/ServiceDetails.css';
 
 function ServiceStudies() {
   return (
     <div className="page">
 
-      {/* Hero */}
       <section className="hero">
         <div className="hero-inner">
           <h1 className="title">Μελέτες για Τεχνικά Έργα</h1>
@@ -13,7 +12,6 @@ function ServiceStudies() {
         </div>
       </section>
 
-      {/* Intro */}
       <section className="intro">
         <div className="wrap">
           <p>
@@ -31,7 +29,6 @@ function ServiceStudies() {
         </div>
       </section>
 
-      {/* Αντικείμενο */}
       <section className="services">
         <div className="wrap">
           <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
@@ -63,7 +60,6 @@ function ServiceStudies() {
         </div>
       </section>
 
-      {/* ISO */}
       <section className="iso">
         <div className="wrap">
           <h2 className="heading">Πλαίσιο Οργάνωσης και Ποιοτικής Προσέγγισης</h2>
@@ -97,7 +93,6 @@ function ServiceStudies() {
         </div>
       </section>
 
-      {/* Θεσμικό Πλαίσιο */}
       <section className="legal">
         <div className="wrap">
           <h2 className="heading">Θεσμικό και Κανονιστικό Πλαίσιο</h2>
@@ -120,7 +115,6 @@ function ServiceStudies() {
         </div>
       </section>
 
-      {/* Προσέγγιση */}
       <section className="approach">
         <div className="wrap">
           <h2 className="heading">Η Προσέγγισή μας</h2>

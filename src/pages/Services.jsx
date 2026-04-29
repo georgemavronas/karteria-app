@@ -8,7 +8,6 @@ function Services() {
 
       <div className="services-intro">
         <div className="services-intro-inner">
-          <p className="services-label">ΚΑΡΤΕΡΙΑ</p>
           <h1 className="services-title">Υπηρεσίες</h1>
           <p className="services-desc">
             Ολοκληρωμένες τεχνικές και συμβουλευτικές υπηρεσίες σε κάθε στάδιο ενός έργου —

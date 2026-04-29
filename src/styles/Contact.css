@@ -3,7 +3,6 @@
   min-height: 80vh;
 }
 
-/* --- Εισαγωγή --- */
 .contact-intro {
   max-width: 1280px;
   margin: 48px auto;
@@ -23,7 +22,6 @@
   line-height: 1.7;
 }
 
-/* --- Grid --- */
 .contact-cards {
   padding: 0 16px 80px;
 }
@@ -73,7 +71,6 @@ a.value:hover {
   color: var(--color-secondary);
 }
 
-/* --- Φόρμα Επικοινωνίας --- */
 .contact-form-section {
   background-color: var(--color-primary-950);
   padding: clamp(48px, 7vw, 100px) clamp(24px, 6vw, 100px);
@@ -110,7 +107,6 @@ a.value:hover {
   line-height: 1.8;
 }
 
-/* --- Form Fields --- */
 .contact-form {
   display: flex;
   flex-direction: column;
@@ -217,7 +213,6 @@ a.value:hover {
   border: 1px solid rgba(239, 68, 68, 0.25);
 }
 
-/* --- Map --- */
 .map {
   max-width: 1280px;
   margin: 0 auto 84px;
@@ -230,7 +225,6 @@ a.value:hover {
   display: block;
 }
 
-/* --- Responsive --- */
 @media (max-width: 900px) {
   .contact-form-wrapper {
     grid-template-columns: 1fr;

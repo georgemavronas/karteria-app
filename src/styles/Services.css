@@ -1,12 +1,12 @@
 .services-page {
   background-color: var(--color-bg);
-  margin-top: var(--header-height);
+  min-height: calc(100vh - var(--header-height) - var(--footer-height));
 }
 
 .services-intro {
+  margin-top: var(--header-height);
   background-color: var(--color-secondary-950);
   padding: 48px 24px 64px;
-  margin-bottom: 48px;
 }
 
 .services-intro-inner {
@@ -27,7 +27,7 @@
 .services-title {
   font-size: 3rem;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--color-text-inverted);
   margin-bottom: 16px;
   line-height: 1.1;
 }
@@ -42,7 +42,7 @@
 
 .services-desc {
   font-size: 1rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-text-inverted-light);
   line-height: 1.8;
   max-width: 620px;
   margin-top: 20px;
@@ -58,9 +58,9 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1px;
-  background-color: var(--color-tertiary-200);
   max-width: 1280px;
-  margin: 0 auto 48px;
+  margin: 0 auto 0px;
+  padding: 48px 0px 48px;
 }
 
 .service-card {

@@ -1,11 +1,9 @@
 .about {
-  background-color: #f0f2f5;
+  background-color: var(--color-bg);
 }
-
-/* --- Intro Section --- */
 .about-intro {
   margin-top: var(--header-height);
-  background-color: #0b0f19;
+  background-color: var(--color-secondary-950);
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 100px);
 }
 
@@ -15,7 +13,6 @@
   padding-top: 0;
   color: #ffffff;
 }
-
 
 .about-intro h1 {
   font-size: clamp(1.8rem, 4vw, 3.5rem);
@@ -48,12 +45,12 @@
   line-height: 1.8;
   margin-bottom: 0;
   padding-left: clamp(16px, 2vw, 24px);
-  border-left: 2px solid #007da5;
+  border-left: 2px solid var(--color-secondary);
 }
 
 /* --- Vision Section --- */
 .about-vision {
-  background-color: #ffffff;
+  background-color: var(--color-surface);
   border-top: 1px solid #d1d5db;
   border-bottom: 1px solid #d1d5db;
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 100px);
@@ -64,18 +61,17 @@
   margin: 0 auto clamp(12px, 2vw, 20px);
   font-size: clamp(1.25rem, 2.5vw, 2rem);
   font-weight: 700;
-  color: #007da5;
+  color: var(--color-secondary);
 }
 
 .about-vision p {
   max-width: 1280px;
   margin: 0 auto;
   font-size: clamp(0.95rem, 1.5vw, 1.1rem);
-  color: #4b5563;
+  color: var(--color-text-light);
   line-height: 1.8;
 }
 
-/* --- Grid tomon drastiriotitas --- */
 .about-bottom {
   padding: clamp(60px, 8vw, 100px) clamp(24px, 6vw, 100px);
 }
@@ -97,15 +93,10 @@
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-.about-card:hover {
-  background-color: #ffffff;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
 .about-card h3 {
   font-size: clamp(1rem, 1.5vw, 1.25rem);
   font-weight: 600;
-  color: #007da5;
+  color: var(--color-secondary);
   margin-bottom: 16px;
 }
 
@@ -120,7 +111,6 @@
   margin-bottom: 0;
 }
 
-/* --- Responsive --- */
 @media (max-width: 900px) {
   .about-intro-body {
     grid-template-columns: 1fr 1fr;

@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import '../styles/ServiceRealEstate.css';
+import '../styles/ServiceDetails.css';
 
 function ServiceRealEstate() {
   return (

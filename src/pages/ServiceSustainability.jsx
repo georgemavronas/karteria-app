@@ -1,5 +1,5 @@
 ﻿import React from 'react';
-import '../styles/ServiceSustainability.css';
+import '../styles/ServiceDetails.css';
 
 function ServiceSustainability() {
   return (
@@ -28,7 +28,6 @@ function ServiceSustainability() {
         </div>
       </section>
 
-      {/* Αντικείμενο Υπηρεσιών */}
       <section className="services">
         <div className="wrap">
           <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
@@ -63,7 +62,6 @@ function ServiceSustainability() {
         </div>
       </section>
 
-      {/* LEED */}
       <section className="leed">
         <div className="wrap">
           <div className="leed-header">
@@ -102,7 +100,6 @@ function ServiceSustainability() {
         </div>
       </section>
 
-      {/* Προσέγγιση */}
       <section className="approach">
         <div className="wrap">
           <h2 className="heading">Η Προσέγγισή μας</h2>
