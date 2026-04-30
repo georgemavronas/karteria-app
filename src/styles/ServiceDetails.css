@@ -1,4 +1,37 @@
-﻿.page {
+﻿.leed-logo-main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 32px;
+    width: 100%;
+}
+
+.leed-logo-main img {
+    width: 180px;
+    max-width: 95vw;
+    height: auto;
+    margin-bottom: 24px;
+    display: block;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+
+.levels.levels-small {
+    gap: 36px;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.level-desc {
+    font-size: 0.92rem;
+    color: #374151;
+    margin-top: 2px;
+    text-align: center;
+    min-width: 80px;
+    min-height: 18px;
+    opacity: 0.8;
+}
+.page {
     margin-top: var(--header-height);
     background-color: var(--color-bg);
     min-height: 100vh;
@@ -190,44 +223,38 @@
     margin-bottom: 20px;
 }
 
+
 .levels {
     display: flex;
-    gap: 12px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
     margin: 28px 0;
     flex-wrap: wrap;
 }
 
 .level {
-    padding: 10px 24px;
-    border-radius: 6px;
-    font-size: 0.85rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
+    background: none;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.level.certified {
-    background-color: #d1fae5;
-    color: #065f46;
-    border: 1px solid #6ee7b7;
+.level img {
+    width: 54px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+    filter: drop-shadow(0 1px 4px rgba(0,0,0,0.08));
+    transition: transform 0.2s;
 }
 
-.level.silver {
-    background-color: #e5e7eb;
-    color: #374151;
-    border: 1px solid #9ca3af;
-}
-
-.level.gold {
-    background-color: #fef3c7;
-    color: #92400e;
-    border: 1px solid #fbbf24;
-}
-
-.level.platinum {
-    background-color: #ede9fe;
-    color: #4c1d95;
-    border: 1px solid #a78bfa;
+.level img:hover {
+    transform: scale(1.08);
 }
 
 .approach {
