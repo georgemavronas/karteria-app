@@ -58,6 +58,14 @@
   padding: max(50px, 5.2083333333vw);
 }
 
+@media (max-width: 1199px) {
+  .home_grid__wrapper {
+    grid-template-columns: 1fr;
+    padding: 32px 16px;
+    gap: 16px;
+  }
+}
+
 .homepage__arrow {
     z-index: 9;
     display: flex;
@@ -86,18 +94,3 @@
   }
 }
 
-@media (max-width: 900px) {
-  .home_grid__wrapper {
-    grid-template-columns: 1fr 1fr;
-    padding: 40px 24px;
-    gap: 20px;
-  }
-}
-
-@media (max-width: 560px) {
-  .home_grid__wrapper {
-    grid-template-columns: 1fr;
-    padding: 32px 16px;
-    gap: 16px;
-  }
-}
