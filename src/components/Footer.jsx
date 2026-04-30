@@ -1,18 +1,19 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaLinkedinIn } from 'react-icons/fa';
 import '../styles/Footer.css';
 
 function Footer() {
-  const footer = document.querySelector('footer');
-  const footerHeight = footer.getBoundingClientRect().height;
+  const footerRef = useRef(null);
 
-  document.documentElement.style.setProperty(
-  '--footer-height',
-  `${footer.offsetHeight}px`
-  );
+  useEffect(() => {
+    if (footerRef.current) {
+      const footerHeight = footerRef.current.getBoundingClientRect().height;
+      document.documentElement.style.setProperty('--footer-height', `${footerHeight}px`);
+    }
+  }, []);
   return (
-    <footer className="footer">
+    <footer className="footer" ref={footerRef}>
       <div className="footer-inner">
 
         <div className="footer-top">
