@@ -58,13 +58,7 @@
   padding: max(50px, 5.2083333333vw);
 }
 
-@media (max-width: 1199px) {
-  .home_grid__wrapper {
-    grid-template-columns: 1fr;
-    padding: 32px 16px;
-    gap: 16px;
-  }
-}
+
 
 .homepage__arrow {
     z-index: 9;
@@ -94,3 +88,11 @@
   }
 }
 
+
+@media (max-width: 1199px) {
+  .home_grid__wrapper {
+    grid-template-columns: 1fr;
+    padding: 32px 16px;
+    gap: 16px;
+  }
+}
