@@ -3,17 +3,16 @@ import '../styles/ServiceDetails.css';
 
 function ServiceProjectManagement() {
   return (
-    <div className="pm-page">
-
-      <section className="pm-hero">
-        <div className="pm-hero-inner">
-          <h1 className="pm-hero-title">Διοίκηση &amp; Διαχείριση Τεχνικών Έργων</h1>
-          <p className="pm-hero-subtitle">Project &amp; Construction Management</p>
+    <div className="page">
+      <section className="hero">
+        <div className="hero-inner">
+          <h1 className="title">Διοίκηση &amp; Διαχείριση Τεχνικών Έργων</h1>
+          <p className="subtitle">Project &amp; Construction Management</p>
         </div>
       </section>
 
-      <section className="pm-intro">
-        <div className="pm-container">
+      <section className="intro">
+        <div className="wrap">
           <p>
             Η ΚΑΡΤΕΡΙΑ Κατασκευαστική &amp; Συμβουλευτική παρέχει ολοκληρωμένες υπηρεσίες
             διοίκησης και διαχείρισης τεχνικών έργων, καλύπτοντας το σύνολο των διαδικασιών
@@ -29,14 +28,13 @@ function ServiceProjectManagement() {
         </div>
       </section>
 
-      {/* Αντικείμενο Υπηρεσιών */}
-      <section className="pm-services-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Αντικείμενο Υπηρεσιών</h2>
-          <p className="pm-section-lead">
+      <section className="services">
+        <div className="wrap">
+          <h2 className="heading">Αντικείμενο Υπηρεσιών</h2>
+          <p className="lead">
             Οι υπηρεσίες διοίκησης και διαχείρισης τεχνικών έργων περιλαμβάνουν:
           </p>
-          <ul className="pm-list">
+          <ul className="list">
             <li>Διοίκηση και συντονισμό του έργου σε επίπεδο Project &amp; Construction Management</li>
             <li>Σχεδιασμό, έλεγχο και παρακολούθηση της κατασκευαστικής διαδικασίας</li>
             <li>Παρακολούθηση της ορθής και εμπρόθεσμης εκτέλεσης του έργου σύμφωνα με την εγκεκριμένη μελέτη και τις εγκεκριμένες τροποποιήσεις της</li>
@@ -47,7 +45,7 @@ function ServiceProjectManagement() {
             <li>Συντονισμό όλων των εμπλεκόμενων μερών (μελετητές, ανάδοχο, υπεργολάβους, προμηθευτές)</li>
             <li>Υποστήριξη του Κυρίου του Έργου στη διαχείριση τεχνικών, χρονικών και οικονομικών ζητημάτων</li>
           </ul>
-          <p className="pm-note">
+          <p className="note">
             Η παρακολούθηση του έργου πραγματοποιείται με συστηματικό τρόπο, ώστε να
             εντοπίζονται έγκαιρα αποκλίσεις και να λαμβάνονται τεκμηριωμένες και θεσμικά
             ορθές αποφάσεις.
@@ -55,74 +53,62 @@ function ServiceProjectManagement() {
         </div>
       </section>
 
-      {/* Ποιότητα & Commissioning */}
-      <section className="pm-cost-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Ποιότητα Έργου, Commissioning &amp; Λειτουργική Παράδοση</h2>
-          <p>
-            Στο πλαίσιο της διοίκησης και διαχείρισης των τεχνικών έργων καταρτίζεται,
-            εφαρμόζεται και παρακολουθείται Πρόγραμμα Ποιότητας Έργου, σύμφωνα με τις
-            κατευθυντήριες οδηγίες του ISO 10005:2018.
-          </p>
-          <p>
-            Στο πλαίσιο του Προγράμματος Ποιότητας Έργου σύμφωνα με το ISO 9001 — Συστήματα
-            Διαχείρισης Ποιότητας (προϊόντων και υπηρεσιών) και το ISO 14001 — Συστήματα
-            Περιβαλλοντικής Διαχείρισης, οργανώνονται οι διαδικασίες ελέγχου, οι αρμοδιότητες
-            και η τεχνική τεκμηρίωση, διασφαλίζοντας τη συμμόρφωση με τις συμβατικές,
-            ποιοτικές, περιβαλλοντικές και κανονιστικές απαιτήσεις καθ' όλη τη διάρκεια
-            υλοποίησης. Η διοίκηση των τεχνικών έργων βασίζεται σε σύγχρονες αρχές Project
-            Management και στις κατευθυντήριες οδηγίες του ISO 21502:2020, διασφαλίζοντας τον
-            αποτελεσματικό σχεδιασμό, τον συντονισμό και την έγκαιρη ολοκλήρωση κάθε έργου.
-          </p>
-          <p>
-            Παράλληλα, στη διαχείριση των έργων ενσωματώνεται οργανωμένη προσέγγιση σε
-            θέματα Υγείας και Ασφάλειας στην Εργασία, με συστηματική εκτίμηση κινδύνων και
-            εφαρμογή προληπτικών μέτρων, σύμφωνα με τις αρχές των συστημάτων διαχείρισης ΥΑΕ
-            και τις κατευθύνσεις του ISO 45001:2018, σε συνδυασμό με την ισχύουσα εθνική
-            νομοθεσία.
-          </p>
-          <p>
-            Σε έργα με αυξημένες απαιτήσεις λειτουργικής απόδοσης και βιωσιμότητας,
-            παρέχεται υποστήριξη για τη λειτουργική παραλαβή των συστημάτων (Commissioning),
-            καθώς και για την κατάρτιση Προγράμματος Λειτουργίας και Συντήρησης του έργου
-            και των εγκαταστάσεών του, σύμφωνα με τις απαιτήσεις του προτύπου LEED
-            (Leadership in Energy and Environmental Design), όπου αυτό εφαρμόζεται.
-          </p>
-
-          <div className="pm-iso-grid">
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 9001</p>
-              <p className="pm-iso-label">Ποιότητα</p>
+     
+      <section className="highlights">
+        <div className="wrap">
+          <div className="highlights-block">
+            <h2 className="heading">Ποιότητα Έργου, Commissioning &amp; Λειτουργική Παράδοση</h2>
+            <div className="highlights-text highlights-paragraphs">
+              <p>
+                Στο πλαίσιο της διοίκησης και διαχείρισης των τεχνικών έργων καταρτίζεται, εφαρμόζεται και παρακολουθείται <strong>Πρόγραμμα Ποιότητας Έργου</strong>, σύμφωνα με τις κατευθυντήριες οδηγίες του <strong>ISO 10005:2018</strong>.
+              </p>
+              <p>
+                Το <strong>Πρόγραμμα Ποιότητας Έργου</strong> βασίζεται στα πρότυπα <strong>ISO 9001</strong> (Συστήματα Διαχείρισης Ποιότητας) και <strong>ISO 14001</strong> (Συστήματα Περιβαλλοντικής Διαχείρισης). Οργανώνονται οι διαδικασίες ελέγχου, οι αρμοδιότητες και η τεχνική τεκμηρίωση, διασφαλίζοντας τη συμμόρφωση με όλες τις συμβατικές, ποιοτικές, περιβαλλοντικές και κανονιστικές απαιτήσεις.
+              </p>
+              <p>
+                Η διοίκηση των τεχνικών έργων ακολουθεί σύγχρονες αρχές <strong>Project Management</strong> και τις κατευθυντήριες οδηγίες του <strong>ISO 21502:2020</strong>, διασφαλίζοντας αποτελεσματικό σχεδιασμό, συντονισμό και έγκαιρη ολοκλήρωση κάθε έργου.
+              </p>
+              <p>
+                Παράλληλα, ενσωματώνεται οργανωμένη προσέγγιση σε θέματα <strong>Υγείας &amp; Ασφάλειας στην Εργασία</strong>, με συστηματική εκτίμηση κινδύνων και εφαρμογή προληπτικών μέτρων, σύμφωνα με το <strong>ISO 45001:2018</strong> και την ισχύουσα εθνική νομοθεσία.
+              </p>
+              <p>
+                Σε έργα με αυξημένες απαιτήσεις λειτουργικής απόδοσης και βιωσιμότητας, παρέχεται υποστήριξη για <strong>λειτουργική παραλαβή συστημάτων (Commissioning)</strong> και κατάρτιση <strong>Προγράμματος Λειτουργίας &amp; Συντήρησης</strong>, σύμφωνα με τις απαιτήσεις του προτύπου <strong>LEED</strong> (Leadership in Energy and Environmental Design).
+              </p>
             </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 14001</p>
-              <p className="pm-iso-label">Περιβάλλον</p>
-            </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 21502</p>
-              <p className="pm-iso-label">Project Management</p>
-            </div>
-            <div className="pm-iso-card">
-              <p className="pm-iso-code">ISO 45001</p>
-              <p className="pm-iso-label">Υγεία &amp; Ασφάλεια</p>
-            </div>
-            <div className="pm-iso-card pm-iso-card">
-              <p className="pm-iso-code">LEED</p>
-              <p className="pm-iso-label">Commissioning</p>
+            <div className="iso-row">
+              <div className="iso-card simple">
+                <p className="badge">ISO 9001</p>
+                <p>Ποιότητα</p>
+              </div>
+              <div className="iso-card simple">
+                <p className="badge">ISO 14001</p>
+                <p>Περιβάλλον</p>
+              </div>
+              <div className="iso-card simple">
+                <p className="badge">ISO 21502</p>
+                <p>Project Management</p>
+              </div>
+              <div className="iso-card simple">
+                <p className="badge">ISO 45001</p>
+                <p>Υγεία &amp; Ασφάλεια</p>
+              </div>
+              <div className="iso-card simple">
+                <p className="badge">LEED</p>
+                <p>Commissioning</p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Θεσμικό Πλαίσιο */}
-      <section className="pm-legal-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
+      <section className="legal">
+        <div className="wrap">
+          <h2 className="heading">Θεσμικό &amp; Κανονιστικό Πλαίσιο</h2>
           <p>
             Η διοίκηση και διαχείριση τεχνικών έργων πραγματοποιείται σε πλήρη συμμόρφωση
             με το ισχύον θεσμικό πλαίσιο δημοσίων έργων και συμβάσεων.
           </p>
-          <ul className="pm-list pm-list--legal">
+          <ul className="list list-legal">
             <li>
               <strong>Ν. 4412/2016</strong> — καθορίζει τις διαδικασίες ανάθεσης, τις
               συμβατικές υποχρεώσεις, καθώς και τους μηχανισμούς ελέγχου, πιστοποίησης και
@@ -143,10 +129,9 @@ function ServiceProjectManagement() {
         </div>
       </section>
 
-      {/* Προσέγγιση */}
-      <section className="pm-approach-section">
-        <div className="pm-container">
-          <h2 className="pm-section-title">Η Προσέγγισή μας</h2>
+      <section className="approach">
+        <div className="wrap">
+          <h2 className="heading">Η Προσέγγισή μας</h2>
           <p>
             Η διοίκηση και διαχείριση τεχνικών έργων στην ΚΑΡΤΕΡΙΑ βασίζονται στη
             μεθοδικότητα, στη θεσμική γνώση και στη συστηματική τεχνική παρακολούθηση,
