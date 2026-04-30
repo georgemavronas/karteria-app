@@ -45,13 +45,14 @@
 
 .hero {
     background-color: var(--color-secondary-950);
-    padding: 48px 24px 32px;
+    margin-top: var(--header-height);
+    padding: 48px 24px 64px;
 }
 
 .hero-inner {
-    padding-top: 24px;
-    max-width: 900px;
+    max-width: 1280px;
     margin: 0 auto;
+    padding-top: 0;
 }
 
 .tag {
@@ -64,18 +65,21 @@
 }
 
 .title {
-    font-size: 2.4rem;
+    font-size: 3rem;
     font-weight: 700;
     color: var(--color-text-inverted);
-    margin-bottom: 8px;
-    line-height: 1.2;
+    margin-bottom: 16px;
+    line-height: 1.1;
 }
 
 .subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--color-text-inverted-light);
-    font-style: italic;
-    margin: 0;
+    line-height: 1.8;
+    max-width: 620px;
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-style: normal;
 }
 
 .intro {
