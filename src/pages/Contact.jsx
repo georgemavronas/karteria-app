@@ -52,7 +52,8 @@ function Contact() {
           </div>
           <div className="info-card">
             <span className="label">ΔΙΕΥΘΥΝΣΗ</span>
-            <span className="value">ΕΘΝΙΚΗΣ ΑΝΤΙΣΤΑΣΕΩΣ 70, ΔΑΦΝΗ, Τ.Κ. 17237</span>
+            <span className="value">Εθνικής Αντιστάσεως 70, Δάφνη</span>
+            <span className="value">Τ.Κ. 17237</span>
           </div>
         </div>
       </section>

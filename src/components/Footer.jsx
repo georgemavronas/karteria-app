@@ -18,7 +18,7 @@ function Footer() {
 
         <div className="footer-top">
           <div>
-            <img src={process.env.PUBLIC_URL + '/logos/karteria_logo_white.svg'} alt="Karteria Logo" className="footer-logo" />
+            <img src={process.env.PUBLIC_URL + '/logos/karteriaLogoWhiteBold.png'} alt="Karteria Logo" className="footer-logo" />
           </div>
 
           <div className="social">
