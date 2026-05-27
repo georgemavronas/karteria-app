@@ -36,7 +36,7 @@ function Services() {
 
         <Link to="/services/real-estate" className="service-card service-card--link">
           <p className="service-number">03</p>
-          <h3>Construction And Real Estate Developement</h3>
+          <h3>Ανέγερση & Αξιοποίηση Ακινήτων</h3>
           <p className="service-subtitle">ΑΝΕΓΕΡΣΗ &amp; ΑΞΙΟΠΟΙΗΣΗ</p>
           <p className="service-intro">Από το πρώτο σχέδιο έως το «κλειδί στο χέρι» — συντονισμός μελετών, αδειών, κατασκευής και τελικής πώλησης.</p>
           <span className="service-link">Μάθετε περισσότερα →</span>
