@@ -55,39 +55,39 @@
 
 @keyframes spin_4991 {
   /* 1η λέξη */
-  0%, 16% {
+  0%, 18% {
     transform: translateY(0%);
   }
-  20% {
+  22% {
     transform: translateY(-100%);
   }
 
   /* 2η λέξη */
-  20%, 36% {
+  22%, 38% {
     transform: translateY(-100%);
   }
-  40% {
+  42% {
     transform: translateY(-200%);
   }
 
   /* 3η λέξη */
-  40%, 56% {
+  42%, 58% {
     transform: translateY(-200%);
   }
-  60% {
+  62% {
     transform: translateY(-300%);
   }
 
   /* 4η λέξη */
-  60%, 76% {
+  62%, 78% {
     transform: translateY(-300%);
   }
-  80% {
+  82% {
     transform: translateY(-400%);
   }
 
   /* 5η λέξη */
-  80%, 96% {
+  82%, 98% {
     transform: translateY(-400%);
   }
   100% {

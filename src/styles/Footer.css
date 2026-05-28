@@ -18,7 +18,7 @@
 }
 
 .footer-logo {
-  height: 58px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   filter: brightness(0) invert(1);
@@ -28,6 +28,7 @@
   display: flex;
   gap: 16px;
   font-size: 1.125rem;
+  align-items: center;
 }
 
 .social a {
@@ -125,5 +126,11 @@
   .copyright {
     flex-direction: row;
     align-items: center;
+  }
+  .footer-logo {
+    height: 58px;
+    width: auto;
+    object-fit: contain;
+    filter: brightness(0) invert(1);
   }
 }
